@@ -7,5 +7,36 @@ skyAngle [ 0.075, 0.1, 0.2, 1.309, 1.5708 ]
 skyColor [ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ]
 
 
+}
+Shape {
+	geometry IndexedFaceSet	{
+		coord Coordinate {
+			point [
+			50	0  -50,
+			50	0  50,
+			50	0  -50
+			-50	0  -50
+			]
+		}
+		coordIndex [0 1 2 3 4 0]
+		color Color	{
+			color [255 0 0]
+		}
+		colorIndex [0 0 0 0 0 ]
+		solid FALSE
+	}
+	
+}
+Shape {
+	geometry Box {
+	size 50 0.05 50
+	}
+	appearance Appearance {
+		texture	ImageTexture {
+			url	""
+			repeatS	TRUE
+			repeatT	TRUE
+		}
+	}
 
 }
