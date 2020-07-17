@@ -1,0 +1,51 @@
+#VRML V2.0 utf8
+#VRML V2.0 utf8
+	#tran day 0.5 ngang 5 dai 7.15
+Transform {
+	children 
+		Shape {
+			appearance Appearance {
+				material Material {
+				
+				
+				}
+			}
+			geometry Extrusion {
+				beginCap TRUE
+				endCap TRUE
+				creaseAngle	1
+				solid  FALSE
+				orientation	1 0 0 3.14
+				crossSection [
+					-1 0,
+					
+					-0.9 -0.43589 ,
+					-0.8 -0.6 ,
+					-0.7 -0.714143 ,
+
+					-0.580865 -0.814 ,
+					-0.405714 -0.914 ,
+
+
+					0 -1 ,
+
+				
+					5 -1,
+				5 15.45,
+				-1 15.45,
+				-1 0	
+				
+				]
+				spine [
+					0 0 0,
+					0 0.5 0,
+				]
+				scale [
+					1 1,
+					1 1
+				]
+			}
+		}
+
+}
+

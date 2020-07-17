@@ -1,0 +1,127 @@
+#VRML V2.0 utf8
+
+DEF kehanggiua Transform {
+	translation	0 0 0
+	children [
+		DEF khung Transform {
+	translation	0 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				material DEF mau Material {
+					diffuseColor .569 .58 .58
+					specularColor .671 .459 .439
+					ambientIntensity 0.05
+					shininess .008
+				}
+			}
+			geometry Extrusion {
+				crossSection [6 8.64,-6 8.64, -6 -8.64, 6 -8.64,6 8.64]
+				spine [
+0	5	0	,
+0	4.8	0	,
+0	4.6	0	,
+0	4.4	0	,
+0	4.2	0	,
+0	4	0	,
+0	3.8	0	,
+0	3.6	0	,
+0	3.4	0	,
+0	3.2	0	,
+0	3	0	,
+0	2.8	0	,
+0	2.6	0	,
+0	2.4	0	,
+0	2.2	0	,
+0	2	0	,
+0	1.8	0	,
+0	1.6	0	,
+0	1.4	0	,
+0	1.2	0	,
+0	1	0	,
+0	0.8	0	,
+0	0.6	0	,
+0	0.4	0	,
+0	0.2	0	,
+0	0	0	
+
+				]
+				scale [		
+1	1	,
+0.8125	1	,
+0.625	1	,
+0.4375	1	,
+0.25	1	,
+0.25	1	,
+0.167	1	,
+0.084	1	,
+0.084	1	,
+0.084	1	,
+0.080571	1	,
+0.077142	1	,
+0.073713	1	,
+0.070284	1	,
+0.066855	1	,
+0.063426	1	,
+0.06	1	,
+0.06	1	,
+0.06	1	,
+0.06	1	,
+0.06	1	,
+0.06	1	,
+0.06	1	,
+0.06	1	,
+0.06	1	,
+0.06	1	,
+	
+	
+
+
+
+
+				]
+				solid FALSE
+				endCap TRUE
+				beginCap TRUE
+				
+			}
+		}
+	]
+}
+
+Transform {
+	translation	0 5 0
+	children USE khung
+}
+Transform {
+	translation	0 10 0
+	children USE khung
+}
+Transform {
+	translation	0 15 0
+	children USE khung
+
+}
+
+Transform {
+	translation	0 0 0 
+	children Shape {
+		geometry Box {
+			size 12 0.8 17.28
+		}
+		appearance Appearance {
+			material USE mau
+		}
+	}
+}
+	]
+
+}
+Transform {
+	translation	0 0 17.28 
+	children USE kehanggiua
+}
+Transform {
+	translation	0 0 34.56 
+	children USE kehanggiua
+}

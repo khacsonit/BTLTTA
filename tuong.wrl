@@ -1,0 +1,98 @@
+#VRML V2.0 utf8
+#tuong cong	day 0.15 cao 3.5 
+Transform {
+	translation	0.4 -3.5 -0.4
+	children 
+		Shape {
+			appearance Appearance {
+				material Material {
+				
+				
+				}
+			}
+			geometry Extrusion {
+				beginCap TRUE
+				endCap TRUE
+				creaseAngle	1
+				solid  FALSE
+				orientation	1 0 0 3.14
+				crossSection [
+					-1 15,
+					-1 0,
+					
+					-0.9 -0.43589 ,
+					-0.8 -0.6 ,
+					-0.7 -0.714143 ,
+
+					-0.580865 -0.814 ,
+					-0.405714 -0.914 ,
+
+
+					0 -1 ,
+
+				
+					1 -1,
+					1 -0.85,
+					0 -0.85 ,
+					
+					-0.255714 -0.764 ,
+					-0.430865 -0.664 ,
+
+					-0.55 -0.564143 ,
+					-0.65 -0.45 ,
+					-0.75 -0.28589 ,
+
+					-0.85 0,
+					-0.85 15,
+					-1 15,
+
+
+					
+				
+				]
+				spine [
+					0 0 0,
+					0 3.5 0,
+				]
+				scale [
+					1 1,
+					1 1
+				]
+			}
+		}
+
+}
+#tuong ben phai
+Transform {
+	translation	4.9 -1.75 -7.4
+	rotation 0 1 0 1.57
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+				
+				}
+			}
+			geometry Box {size 16 3.5 0.15}
+			
+		}
+		
+	]
+}
+# tuong sau
+Transform {
+	translation	2.2 -1.75 -15.35
+
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+				
+				}
+			}
+			geometry Box {size 5.4 3.5 0.15}
+			
+		}
+		
+	]
+}
