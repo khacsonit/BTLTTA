@@ -1,0 +1,202 @@
+#VRML V2.0 utf8
+
+DEF	quat Transform {
+	children [
+	#quat tran
+	
+	
+	Group {
+		children [
+		
+			#truc
+			Transform {
+				translation	0 .5 0
+				children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 .35 .25
+							specularColor 0 .31 .36
+							ambientIntensity .0533
+							shininess .32
+						} 
+					}
+					geometry Cylinder {
+						radius .1
+						height 1
+					}
+				}]
+			}
+			#motor
+			Transform {
+				children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor .3 .18 .18
+							specularColor .28 .15 .22
+							ambientIntensity 0
+							shininess .1
+							emissiveColor .3 .18 .18
+						}
+					}  
+					geometry Cylinder {
+						radius .3
+						height .3
+					}
+				}]
+			}
+			#canh 1
+			DEF canh1 Transform {
+				rotation 1 0 0 0.3
+				children [
+				DEF canh Group {
+					children [
+					
+					#đầu cánh
+					Transform {
+						translation	1.5 0 0
+						children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor .61 .61 .61
+									specularColor .39 .39 .39
+									ambientIntensity .25
+									shininess .11
+								}
+
+							}
+							geometry Cylinder {
+								radius .2
+								height .05
+							}
+						}]
+					}
+					#cánh
+					Transform {
+						translation	.75 0 0
+						children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor .61 .61 .61
+									specularColor .39 .39 .39
+									ambientIntensity .25
+									shininess .11
+								}
+							}
+							geometry Box {
+								size 1.5 .05 .4
+							}
+						}]
+					}
+					
+					
+					]
+				}]
+			}  
+			#canh 2
+			Transform {	  
+				rotation 0 1 0 2.1
+				children [USE canh1 ]
+			}
+
+			#canh 3
+			Transform {	  
+				rotation 0 1 0 -2.1
+				children [USE canh1 ]
+			}
+
+		
+		
+		# end group
+		]
+	}
+
+	
+	# END QUAT
+	]
+}
+
+
+#nut bay quat
+DEF swicth Transform {
+	translation	2 2 2
+	children [
+	Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor 0 0 0
+				specularColor .89 .89 .89
+				emissiveColor 1 .84 .44
+				ambientIntensity 0
+				shininess .05
+			}
+
+		}
+		geometry Box {
+			size .5 .5 .5
+		}
+	}]
+}
+
+
+
+DEF	scrip Script {
+	eventIn	SFBool switch
+	eventOut SFBool	On
+	eventOut SFBool	Off
+	field SFBool turn FALSE
+	url	"javascript:
+	function switch (val){ 
+		if(val){
+			turn = !turn;
+			if(turn){
+				On = TRUE; Off = FALSE;
+			}else{
+				On = FALSE; Off = TRUE;
+			}
+		}
+	}"
+}
+  
+DEF	touchSS TouchSensor	{
+	#enabled	TRUE
+}  
+
+DEF	timeSsOn TimeSensor	{
+	enabled	FALSE
+	cycleInterval 2
+	loop TRUE
+}
+
+DEF	oRiIntorOn OrientationInterpolator {
+	key	[0 .5 1]
+	keyValue[0 1 0 0,0 1 0 3.14,0 1 0 6.28 ]
+}
+
+
+DEF	timeSsOff TimeSensor	{
+	enabled	FALSE
+	cycleInterval 2
+	loop TRUE
+}
+
+DEF	oRiIntorOff OrientationInterpolator {
+	key	[0 .5 1]
+	keyValue[0 1 0 0,0 1 0 3.14,0 1 0 6.28 ]
+}
+
+ROUTE touchSS.isActive	TO scrip.switch
+ROUTE scrip.On TO  timeSsOn.enabled
+ROUTE scrip.Off TO	timeSsOff.enabled
+
+ROUTE touchSS.touchTime	TO timeSsOn.startTime
+ROUTE touchSS.touchTime	TO timeSsOff.startTime
+
+ROUTE timeSsOn.fraction_changed TO	oRiIntorOn.set_fraction
+ROUTE oRiIntorOn.value_changed TO  	quat.rotation
+	
+ROUTE timeSsOff.fraction_changed TO	oRiIntorOff.set_fraction
+ROUTE oRiIntorOff.value_changed TO  	quat.rotation

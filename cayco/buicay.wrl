@@ -1,0 +1,35 @@
+#VRML V2.0 utf8
+
+DEF Bui1 Transform {
+	children [
+		Shape {
+			geometry Box {
+				size 0.00000001 2 5
+			}
+			appearance Appearance {
+				texture	ImageTexture {
+					url	["../imgBTL/b2.png"]
+				}
+			}
+		}
+	]
+}
+Transform {
+	rotation 0 1 0 1.57
+	children [
+		USE	Bui1
+	]
+}
+
+Transform {
+	rotation 0 1 0 0.7
+	children [
+		USE	Bui1
+	]
+}
+Transform {
+	rotation 0 1 0 2.2
+	children [
+		USE	Bui1
+	]
+}

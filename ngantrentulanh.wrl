@@ -1,0 +1,81 @@
+#VRML V2.0 utf8
+
+ #ngan tren tu lanh
+
+Transform {
+	children [
+		Transform {
+			children [ #matlung
+					  Shape	{
+						  appearance Appearance	{
+							  material Material {
+								  diffuseColor .23 .2 .43
+								  specularColor .32 .4 .4
+								  ambientIntensity .0733
+								  shininess .54
+							  }
+						  }
+					geometry Box {
+					size  .7 1.5 .05
+					} 
+		    	}
+				#matphai
+				Transform {
+					translation	-0.35 0 0.33
+					children [
+						 Shape {
+					geometry Box {
+					size 0.05 1.5 0.7
+					}
+				}
+					]
+				}
+				#mattrai
+				Transform {
+					translation	0.35 0 0.33
+					children [
+						 Shape {
+					geometry Box {
+					size 0.05 1.5 0.7
+					}
+				}
+					]
+				}
+				#matday
+				Transform {
+					translation	0 -0.75 0.33
+					children [
+						 Shape {
+					geometry Box {
+					size 0.8 0.08 0.7
+					}
+				}
+					]
+				}
+				#mattren
+				Transform {
+					translation	0 0.75 0.33
+					children [
+						  Shape {
+					geometry Box {
+					size 0.75 0.08 0.7
+					}
+				}
+					]
+				}
+				Transform {
+					translation	0.04 0 0.69
+					children [
+						Inline {
+							url	["kinhtulanh.wrl"]
+						}
+					]
+				}
+				
+			]
+		}
+			 
+		
+
+	]
+}

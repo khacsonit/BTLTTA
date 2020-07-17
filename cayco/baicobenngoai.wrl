@@ -1,0 +1,271 @@
+#VRML V2.0 utf8
+
+DEF	baicotrai Transform	{
+	rotation 1 0 0 1.57
+	children [
+		DEF	khung Transform	{
+			children [
+				DEF	khungdoc1 Transform {
+					scale .7 1 1
+					translation	0 0 0
+					children [
+						Shape {
+							geometry Cylinder {
+								radius .2
+								height 10
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["../imgBTL/da.jpg"]
+								}
+							}
+						}
+					]
+				}
+
+				DEF	khungdoc2 Transform {
+					scale .7 1 1
+					translation	4.95 0 0
+					children [
+						Shape {
+							geometry Cylinder {
+								radius .2
+								height 10
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["../imgBTL/da.jpg"]
+								}
+							}
+						}
+					]
+				}
+
+				DEF	khung2 Transform {
+					scale .7 1 1
+					rotation 0 0 1 1.57
+					translation 2.5 4.9 0
+					children [
+						Shape {	 appearance Appearance {
+								texture	ImageTexture {
+									url	["../imgBTL/da.jpg"]
+								}
+							}
+							geometry Cylinder {
+								radius .2
+								height 5
+							}
+						}
+					]
+				}
+
+				DEF	khungngang2 Transform {
+					scale .7 1 1
+					rotation 0 0 1 1.57
+					translation 2.5 -4.9 0
+					children [
+						Shape {	 appearance Appearance {
+								texture	ImageTexture {
+									url	["../imgBTL/da.jpg"]
+								}
+							}
+							geometry Cylinder {
+								radius .2
+								height 5
+							}
+						}
+					]
+				}
+
+				DEF	baico Transform	{
+					translation	2.5 0 .05
+					children [
+						Shape {
+							geometry Box {
+								size 5 10 .2
+							}
+							appearance Appearance {
+								texture	ImageTexture {
+									url	["../imgBTL/co.jpg"]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
+
+DEF	hangco Transform {
+	children [
+		DEF	co1 Transform {
+			scale .34 .3 .2
+			translation	2.4 .2 4.7
+			children [
+				Inline {
+					url	["../ChauHoa/hangcaybui.wrl"]
+				}
+			]
+		}
+
+		Transform {
+			translation	0 0 -9.4
+			children [
+				USE	co1
+			]	
+		}
+
+		DEF	co2	Transform {
+			rotation 0 1 0 1.57	
+			children [
+				USE	co1
+			]	
+		}
+		Transform {
+			translation	0 0 4.7
+			children [
+				USE	co2
+			]
+		}
+		DEF	co3 Transform {
+			translation	5 0 -4.7
+			rotation 0 1 0 -1.57	
+			children [
+				USE	co1
+			]	
+		}
+		Transform {
+			translation	0 0 4.7
+			children [
+				USE	co3
+			]
+		}
+	]
+}
+
+DEF	hanghoa1 Transform {
+	translation	2.4 .8 4
+	scale 4 4 4
+	children [
+		DEF	hoa1 Transform {
+			children [
+				Inline {
+					url	["../ChauHoa/bonghoavang.wrl"]
+				}
+			]
+		}
+
+		DEF	hoa2 Transform {
+			translation	  .2 0 0
+			 children [
+				Inline {
+					url	["../ChauHoa/bonghoatim.wrl"]
+				}
+			]
+		}
+
+		Transform {
+			translation	.4 0 0
+			children[
+				USE	hoa1 
+			]
+		}
+
+		Transform {
+			translation	-.2 0 0
+			children[
+				USE	hoa1 
+			]
+		}
+		Transform {
+			translation	-.6 0 0
+			children[
+				USE	hoa2 
+			]
+		}
+	]
+}
+DEF	hanghoa2 Transform {
+	translation	2.4 .8 3
+	scale 4 4 4
+	children [
+		Transform {
+			translation	-.4 0 0
+			children[
+				USE	hoa1 
+			]
+		}
+		Transform {
+			translation	-.2 0 0
+			children[
+				USE	hoa1 
+			]
+		}
+		Transform {
+			translation	-.2 0 0
+			children[
+				USE	hoa2 
+			]
+		}
+		Transform {
+			translation	.2 0 0
+			children[
+				USE	hoa2 
+			]
+		}
+		Transform {
+			translation	0 0 0
+			children[
+				USE	hoa2 
+			]
+		}
+	]
+}
+
+DEF hanghoa3 Transform {
+	translation	4.8 0 0
+	rotation 0 1 0 3.14
+	children	[
+		USE	hanghoa1
+	]
+}
+DEF hanghoa4 Transform {
+	translation	4.8 0 0
+	rotation 0 1 0 3.14
+	children	[
+		USE	hanghoa2
+	]
+}
+Transform {
+	translation	0 0 -4
+	children [
+		USE	hanghoa1
+	]
+}
+Transform {
+	translation	0 0 5
+	children [
+		USE	hanghoa3
+	]
+}
+Transform {
+	translation	0 0 5
+	children [
+		USE	hanghoa4
+	]
+}
+Transform {
+	translation	0 0 -6
+	children [
+		USE	hanghoa1
+	]
+}
+Transform {
+	translation	0 0 -4
+	children [
+		USE	hanghoa2
+	]
+}
+
+

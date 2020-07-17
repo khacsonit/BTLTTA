@@ -1,0 +1,132 @@
+#VRML V2.0 utf8
+
+# file test chung
+
+DEF	congTac Transform {
+	translation	3 4 0
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .52 .26 0
+					specularColor .97 .98 .12
+					ambientIntensity .00333
+					shininess .12
+					emissiveColor .24 0 0
+					transparency .3
+				}
+
+			}
+			geometry Box {
+				size 1 1 1
+			}
+		}
+
+		DEF	light2 SpotLight {
+			color 1 .5 .5
+			location -3 4 0
+			ambientIntensity .5
+			on FALSE
+			radius 3
+			beamWidth 1.570796
+			attenuation	1 0 0
+			cutOffAngle	0.785398
+			direction 0 0 -1
+			intensity 1
+		}
+		DEF light PointLight {
+			color 1 .5 .5
+			on FALSE
+			location 3 4 0
+			attenuation	1 0 0
+			radius 100
+			intensity 1
+			ambientIntensity 0
+		}
+		DEF touch TouchSensor	{
+			enabled	TRUE
+		}
+	]
+}
+
+DEF quat Transform {
+	children [
+		Inline	{
+			url	["quatTran.wrl",]
+		}]
+}
+DEF	timeSS TimeSensor {
+	cycleInterval 1
+	enabled	FALSE
+	loop TRUE
+}
+DEF	timeSS1 TimeSensor {
+	cycleInterval 0
+	enabled	FALSE
+	loop TRUE
+}
+
+DEF	OriInTor OrientationInterpolator {
+	key	[0 .5 1]
+	keyValue [0 1 0 0,
+		0 1 0 3.14,
+		0 1 0 6.28]
+}
+
+
+
+DEF	scrip Script {
+	eventIn	SFBool switch
+	eventOut SFBool	On
+	eventOut SFBool	Off
+	field SFBool turn FALSE
+	url	["javascript:
+		function switch(val){
+			if(val){
+				turn=!turn;
+				if(turn){ On = TRUE; Off=FALSE;}
+				else{Off = TRUE; On=FALSE;}
+			}
+		}
+		",]
+}
+
+
+ROUTE touch.isActive TO	scrip.switch
+ROUTE scrip.On TO timeSS.enabled
+ROUTE scrip.Off	TO timeSS1.enabled
+
+ROUTE scrip.On TO light.on
+ROUTE scrip.Off	TO light2.on
+
+ROUTE timeSS.fraction_changed TO OriInTor.set_fraction
+ROUTE OriInTor.value_changed TO	quat.rotation
+
+Viewpoint {
+fieldOfView 0.785398
+position 0 0 20
+orientation 0 0 1 0
+description "Góc nhìn số 1"
+jump TRUE
+
+}
+Transform {
+	translation	0 -3 0
+	children [
+	
+Shape {
+	appearance Appearance {
+		material Material {
+			diffuseColor .28 .09 .13
+			specularColor .28 .11 .14
+			ambientIntensity .04
+			shininess .13
+		}
+
+	}
+	geometry Box {
+		size 20 .02 20
+	}
+}
+]
+}

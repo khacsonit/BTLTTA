@@ -1,0 +1,59 @@
+#VRML V2.0 utf8
+
+DEF	cay1 Transform {
+	children [
+		Shape {
+			geometry Extrusion {
+				crossSection [.5 .86, .707 .707, .86 .5, 1 0, .86 .5, 1 0,
+					.86 -.5, .707  -.707, .5 -.86, 0 -1,
+					-.5 -.86, -.707 -.707, -.86 -.5, -1 0, -.86 .5, -.707 .707, 
+					-.5 .86,0 1, .5 .86 ]
+				spine [ 0 2.4 0, 0 2.6 0, 0 2.3 0]
+				scale [ 1.5 1.5, 1.6 1.6, 1.5 1.5]
+				solid TRUE
+
+				endCap TRUE
+				beginCap TRUE
+			}
+
+			appearance Appearance {
+				texture	ImageTexture {
+					url	"../imgBTL/datrang.jpg"
+					repeatS	TRUE
+					repeatT	TRUE
+				}
+			}
+		}
+		DEF	dat Transform {
+			scale 1 .05 1
+			translation	0 2.55 0
+			children [
+				Shape {
+
+			geometry Sphere	{
+				radius 1.53
+			}
+
+			appearance Appearance {
+				texture	ImageTexture {
+					url	"../imgBTL/dat.jpg"
+					repeatS	TRUE
+					repeatT	TRUE
+				}
+			}
+
+		}
+			]
+		}
+		DEF	thancay Transform {
+			scale .2 .2 .2
+			translation	0 2.5 0
+			children [
+				Inline {
+					url	["CaiCay/thancay.wrl"]
+				}
+			]
+		}
+		
+	]
+}
