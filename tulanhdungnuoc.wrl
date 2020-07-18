@@ -71,6 +71,14 @@ Transform {
 						}
 					]
 				}
+				Transform {
+					
+					children [
+						Inline {
+							url	["ngantulanh.wrl"]
+						}
+					]
+				}
 				
 			]
 		}
