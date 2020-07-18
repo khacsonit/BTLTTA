@@ -1,0 +1,98 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		DEF tivi Transform {
+				translation	0 1.05 0
+				rotation 1 0 0 0.5
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {}
+						texture DEF movie MovieTexture{
+								loop FALSE
+								url "Video/aaa.swf"
+						
+								}        
+            			
+							}
+
+					geometry Box {
+						size 2 2 0.1
+					}
+				}
+			]
+		}
+	
+	]
+}
+DEF ma Script {
+
+eventIn SFBool turnOn
+
+eventOut SFBool On
+
+eventOut SFBool Off
+
+field SFBool turn FALSE
+
+url "javascript:
+
+function turnOn(val){
+
+if(val){
+
+turn = !turn;
+
+if(turn)
+
+{
+
+On= TRUE;
+
+                        Off=FALSE;
+
+            }
+
+        else
+
+        {
+
+                        On=FALSE;
+
+Off=TRUE;
+
+        }
+
+            }
+
+    }
+
+    "
+
+}
+	DEF	congtactivi Transform {
+			translation	0.8 0.2 -0.2
+			rotation 1 0 0 1.5
+			children [
+				DEF cen TouchSensor {}
+				Shape {
+						appearance  Appearance {
+							material Material {diffuseColor 1 0 0}
+						}
+
+						geometry Cylinder {
+							bottom TRUE
+							height 0.1
+							radius 0.06
+							side TRUE
+							top	TRUE
+						}
+
+						}
+
+			]
+		}
+	ROUTE cen.isActive TO ma.turnOn
+	ROUTE ma.On	TO movie.loop
+	ROUTE cen.enabled TO movie.loop 
