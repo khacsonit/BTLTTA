@@ -1,6 +1,6 @@
 #VRML V2.0 utf8
 Transform {
-	translation	3 0 -4
+	translation	2.5 -1 -4
 	children [		
 	DEF	cen TouchSensor	{}
 		DEF canh1 Transform {
@@ -8,7 +8,7 @@ Transform {
 				Shape {
 					appearance Appearance {material Material {transparency 0.7}}
 				   geometry	Box	{
-					   size	7 9.6 0.1
+					   size	7 10 0.1
 				   }
 				}
 				Transform {
@@ -29,7 +29,7 @@ Transform {
 				Shape {
 					appearance Appearance {material Material {transparency 0.7}}
 				   geometry	Box	{
-					   size	7 9.6 0.1
+					   size	7 10 0.1
 				   }
 				}
 				Transform {
@@ -173,3 +173,49 @@ ROUTE Door1Close.value_changed TO canh1.translation
 ROUTE Door2Open.value_changed TO canh2.translation
 ROUTE Door2Close.value_changed TO canh2.translation
 
+#sơn: khung cửa
+ Transform {
+	 translation -9 6 -4.1 
+	children [
+		DEF trai Shape {
+		appearance Appearance {
+			material Material {transparency 0.7}}
+			geometry	Box	{
+					   size	7 24 0.1
+				   }
+				}	
+		
+	]
+}
+Transform {
+	translation	7 6 -4.1 
+	children [
+		USE	trai
+	]
+}
+Transform {
+	 translation -1 14 -4 
+	children [
+		DEF tren Shape {
+		appearance Appearance {
+			material Material {}}
+			geometry	Box	{
+					   size	23 8 0.1
+				   }
+				}	
+		
+	]
+}
+Transform {
+	 translation -1 10.5 -4.1 
+	children [
+		DEF kinhtren Shape {
+		appearance Appearance {
+			material Material {transparency 0.3}}
+			geometry	Box	{
+					   size	23 13 0.1
+				   }
+				}	
+		
+	]
+}

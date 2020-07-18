@@ -5,9 +5,9 @@ Transform {
 	children 
 		Shape {
 			appearance Appearance {
-				material Material {
-				
-				
+			
+				texture	ImageTexture {
+					url	"Anh\tuong1.jpg"
 				}
 			}
 			geometry Extrusion {

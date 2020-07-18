@@ -1,6 +1,10 @@
 #VRML V2.0 utf8
 
-DEF kehanggiua Transform {
+DEF ALLkehanggiua Transform {
+	translation	0 0 0
+	children [
+	#
+		DEF kehanggiua Transform {
 	translation	0 0 0
 	children [
 		DEF khung Transform {
@@ -124,4 +128,42 @@ Transform {
 Transform {
 	translation	0 0 34.56 
 	children USE kehanggiua
+}
+
+
+	#
+	]
+}
+
+Transform {
+	translation	0 0 -12
+	children USE ALLkehanggiua
+}
+Transform {
+	translation	0 0 -24
+	children USE ALLkehanggiua
+}
+Transform {
+	translation	0 0 -36
+	children USE ALLkehanggiua
+}
+Transform {
+	translation	0 0 -48
+	children USE ALLkehanggiua
+}
+Transform {
+	translation	0 0 -60
+	children USE ALLkehanggiua
+}
+Transform {
+	translation	0 0 -72
+	children USE ALLkehanggiua
+}
+Transform {
+	translation	0 0 -84
+	children USE ALLkehanggiua
+}
+Transform {
+	translation	0 0 -96
+	children USE ALLkehanggiua
 }
