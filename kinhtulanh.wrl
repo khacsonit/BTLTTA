@@ -1,17 +1,20 @@
 #VRML V2.0 utf8
 
 Transform {
-	 
+	
 	children [
 		DEF	 cylin CylinderSensor {
 			enabled	TRUE
-			maxAngle 6.28
+			maxAngle 3.14
 			minAngle 0
 
 		}
 		DEF canhtulanh Transform {
-			translation	-0.7 0 0
+			translation	0.35 0 0
 			children [
+				Transform {
+					translation	-0.4 0 0
+					children [
 				Shape {
 					appearance Appearance {material Material {transparency 0.4}}
 				   geometry	Box	{
@@ -48,6 +51,7 @@ Transform {
 						}
 					]
 				}
+			]}
 			]
 		}
 	]
