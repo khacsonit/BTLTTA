@@ -1,98 +1,88 @@
 #VRML V2.0 utf8
 
 DEF QuaTao Transform {
- translation 0 -3 0
- children [
-  Shape {
-   appearance    Appearance {
-    material Material {
-     diffuseColor   1 0 0}
-	 texture ImageTexture {
-		 repeatS TRUE
-		 repeatT TRUE
-		url	"mauquatao.png"
+	children[
+		Shape {
+			appearance Appearance {
+				material Material { diffuseColor 1 0 0}}
+			geometry Extrusion {
+				crossSection [
+					0.5 0 ,   0.335 -0.335 ,
+					0 -0.5,	 -0.335 -0.335 ,
+					-0.5 0,  -0.335 0.335
+					0 0.5 ,   0.335  0.335 , 0.5 0
+				]
+				spine [
+					0 0.1 0,	0 0 0,		0 0 0, 
+					0 0.04 0,	0 0.1 0,	0 0.3 0,
+				    0 .5 0,		0 0.6 0,0 0.65 0,    0 0.63 0,
+					, 0 0.5 0
+				]
+				scale [
+					0 0 ,		0.2 0.2,	0.3 0.3,
+					0.4 0.4,	0.5 .5,		0.65 0.65,
+					0.68 0.68, 0.5 0.5,0.28 0.28, 0.22 0.22,	0 0,]
+				solid FALSE
+				creaseAngle	1
+				beginCap TRUE
+				endCap TRUE
+			}
+		}
+		Transform {	  
+			translation 0 .3 0
+			children [
+				Shape {
+					appearance Appearance { material Material { diffuseColor  .5 .5 0}}
+					geometry Extrusion {
+						crossSection [
+							0.3 0 ,   0.24 -0.24  ,
+							0 -0.3,	 -0.24  -0.24  ,
+							-0.3 0,  -0.24  0.24 
+							0 0.3 ,   0.24   0.24  , 0.3 0
+						]
+						spine [0 0 0,0 0.3 0,0.1 0.5 0]
+						scale [0 0,0.1 0.1,0.1 0.1]
+						solid FALSE
+						creaseAngle	1
+						endCap TRUE
+					}
+				}
+			]
+		}
+		DEF	time TimeSensor	{
+			cycleInterval 5
+			enabled	TRUE
+			loop TRUE
+		}
+		DEF pos1	PositionInterpolator {
+			key	[0 0.5 1]
+			keyValue [0 4 0,0 2 0,0 0 0]
+		}
+	]
+}
+DEF	CaiRo Transform	{
+	translation	0 -0.1 0
+	children [
+		Shape {
+			appearance Appearance { material Material {}}
+			geometry Extrusion {
+				crossSection [ 
+					1 0,0.71 -0.71
+					0 -1,-0.71 -0.71
+					-1 0,-0.71 0.71
+					0 1,0.71 0.71, 1 0
+				]
+				spine [0 0 0,0 0.6 0]
+				scale [0.9 0.9,1 1]
+				beginCap TRUE
+				endCap FALSE
+				solid FALSE
+				creaseAngle	1
+
+			}
+		}
+	]
 }
 
-
-    }
-    #hình học
-    geometry Extrusion {
-     #toa do tao mat phang day (dung toa do x,z)
-     crossSection  [
-      1 0, 0.8 -0.5, 0.5 -0.8,
-      0 -1, -0.5 -0.8, -0.8 -0.5,
-      -1 0, -0.8 0.5, -0.5 0.8,
-      0 1, 0.5 0.8,0.8 0.5,
-      1 0
-     ]
-     #duong xuong song (toa do y)
-     spine [ 0 0.4 0,  0 0.2 0, 0 0 0, 0 0 0,  0 0.5 0,  0 1.2 0,  0 2 0,  0 2.5 0, 0 3 0, 0 3.5 0, 0 4 0, 0 4 0 0 3.5 0, 0 3 0]
-     #ti le mat phang so mat phang ban dau  (toa do x)
-     scale [ 0 0,  0.5 0.5, 0.8 0.8, 1.3 1.3, 2 2,  2.4 2.4, 2.6 2.6, 2.7 2.7,  2.7 2.7, 2.5 2.5, 2.1 2.1, 1.6 1.6, 1.1 1.1, 0.05 0.05]
-     solid FALSE
-     creaseAngle 1
-     beginCap TRUE
-     endCap TRUE
-    }
-   }
-  ]
- }
- DEF cuongtao Transform {
-  translation  0 -3 0
-  children [
-   Shape {
-    appearance Appearance {
-     material Material {
-      diffuseColor 0 1 0
-     }
-	 texture ImageTexture {
-		 repeatS TRUE
-		 repeatT TRUE
-		 url	"latao.png"	 }
-    }
-    geometry Extrusion {
-     crossSection [
-       1 0, 0.87 -0.5, 0.5 -0.87,
-      0 -1, -0.5 -0.87, -0.87 -0.5,
-      -1 0, -0.87 0.5, -0.5 0.87,
-      0 1, 0.5 0.87,0.87 0.5,
-      1 0]
-      spine [ 0 3 0,0.2 3.6 0, 0 5 0]
-      scale [0.1 0.15, 0.2 .25, 0.2 0.25]
-      creaseAngle 1
-      solid TRUE
-     }
-   }
-  ]
- }
- DEF LaTao Transform {
-  translation 0.2 1.2 0
-  rotation 1 1 1 -1.75
-  children [
-   Shape {
-    appearance Appearance {
-     material Material {
-      diffuseColor 0 1 0
-     }
-	  texture ImageTexture {
-		 repeatS TRUE
-		 repeatT TRUE
-		url	"latao.png"
-}
-   }
-   geometry Extrusion {
-    crossSection [
-     1 0, 0.87 -0.5, 0.5 -0.87,
-      0 -1, -0.5 -0.87, -0.87 -0.5,
-      -1 0, -0.87 0.5, -0.5 0.87,
-      0 1, 0.5 0.87,0.87 0.5,
-      1 0]
-      spine [0 0 0, 0 .2 0, 0 .4 0, 0 0.6 0, 0 .8 0,0 1 0,0 1.2 0,0 1.4 0]
-      scale [.05 .05,0.1 0.2, 0.1 0.25, 0.1 0.25,0.1 .25, 0.1 0.2,0.05 0.05,0 0]
-      creaseAngle 0.8
-      solid TRUE
-     }
-  }
-  ]
- }
- 
+ROUTE time.fraction_changed TO pos1.set_fraction
+ROUTE pos1.value_changed TO	QuaTao.translation

@@ -1,0 +1,53 @@
+#VRML V2.0 utf8
+
+DEF QuaKhe Transform {
+
+	children[
+		Shape {
+			appearance Appearance {
+				material Material { diffuseColor 1  1 0}}
+				geometry Extrusion {
+					#toa do tao mat phang day(dung toa do x,z)
+					crossSection [
+					0 -1.5,-0.3 -.5,-1.4 -.5, -.55 0.1,-0.9 1.2,0 0.6
+					0.9 1.2,0.55 0.1,1.4 -0.5,0.3 -0.5,0 -1.5
+					]
+					#toa do y
+					spine [
+						0 0 0,		0 .3 0,		0 .7 0,		0 1 0,
+						0 1.1 0,	0 1.4 0,	0 1.9 0,	0 2 0,
+						0 2.05 0,0 2 0,	0 1.95 0,
+					]
+					#ti le mat phang so mat phang ban dau(toa do x)
+					scale [
+						0 0	,.2 .2 ,0.4 0.4	,0.45 0.45 ,0.45 0.45, 0.4 0.4	,.2 .2,0.15 0.15,0.08 .08,0.01 .01 ,0 0	
+					]
+					solid FALSE	#hinh co ran k
+					creaseAngle	1	 #lam mo mau sac
+					beginCap TRUE	 #hinh bat dau ran k
+					endCap TRUE		  #hinh cuoi cung ran k
+				}
+		}
+		
+		Transform {
+			translation	0 2.05 0
+			children [
+				Shape {
+					appearance Appearance {material Material { diffuseColor 0.5 0.5 0}}
+					geometry Extrusion {
+						crossSection [.5 0,.355 -.355
+							0 -.5,-.355 -.355
+							-.5 0,-.355 .355
+							0 .5,.355 .355, .5 0
+						]
+						spine [0 0 0,0 .2 0,.3 .4 0,]
+						scale [0 0,.1 .1,.1 .1]
+						solid FALSE
+						beginCap TRUE
+						endCap TRUE
+					}
+				}
+			]
+		}
+	]
+}
