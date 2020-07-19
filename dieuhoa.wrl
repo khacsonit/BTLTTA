@@ -1,0 +1,323 @@
+#VRML V2.0 utf8
+DEF dieuhoa Transform{
+	rotation 0 0 1 -1.57
+	children [
+Transform{
+	rotation 0 1 0 3.14
+	children [
+Transform {
+	children [
+		Shape {
+			appearance Appearance {
+			
+				material Material {}
+			}
+			geometry Extrusion {
+				beginCap TRUE
+				endCap  TRUE
+				solid FALSE
+				creaseAngle	1
+				crossSection [
+					-1 0,
+					-1 1,
+					0.8 1,
+					0.8 -1,
+					0 -1,
+
+
+					-1 0,
+
+				]
+				spine [ 
+					0 0 0,
+					0 0.2 0,
+				]
+				scale [
+				1 1,
+				1 1
+				]
+			}
+		}
+	]
+}
+Transform {
+	translation	0 3 0
+	children [
+		Shape {
+			appearance Appearance {
+			
+				material Material {}
+			}
+			geometry Extrusion {
+				beginCap TRUE
+				endCap  TRUE
+				solid FALSE
+				creaseAngle	1
+				crossSection [
+					-1 0,
+					-1 1,
+					0.8 1,
+					0.8 -1,
+					0 -1,
+
+
+					-1 0,
+
+				]
+				spine [ 
+					0 0 0,
+					0 0.2 0,
+				]
+				scale [
+				1 1,
+				1 1
+				]
+			}
+		}
+	]
+}
+Transform {
+	translation	-0.1 1.6 0.9
+	children Shape {
+		appearance Appearance {
+			
+				material Material {}
+			}
+		geometry Box {
+			 size 1.8 3 0.2
+		}
+	}
+}
+
+Transform {
+	translation	0.8 1.6 0
+	children Shape {
+		appearance Appearance {
+			
+				material Material {}
+			}
+		geometry Box {
+			 size 0.2 3.2 2
+		}
+	}
+}
+
+Transform {
+	translation	0.45 1.6 -1.1
+	children Shape {
+		appearance Appearance {
+			
+				material Material {}
+			}
+		geometry Box {
+			 size 0.9 3.2 0.2
+		}
+	}
+}
+Transform {
+	translation	-1 1.6 0.5
+	children Shape {
+		appearance Appearance {
+			
+				material Material {}
+			}
+		geometry Box {
+			 size 0.2 3.2 1
+		}
+	}
+}
+DEF	denbao Transform {
+	translation	0.3 1.5 -1.2
+	rotation 0 0 1 1.57
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {}
+			}
+			geometry Box {size 1.9 0.2 0.2}
+		}
+		DEF denbao DirectionalLight {
+
+			on FALSE
+
+			intensity 1
+
+			ambientIntensity 100
+
+			color 1 1 0
+
+			direction 1 1 1
+
+			}
+	]
+}
+DEF	canhduoi Transform {
+	translation	-0.7 1.6 -0.2
+	children [
+		Transform {
+				
+				rotation 0 1 0 -0.785
+				children [ Shape {
+					appearance Appearance {
+			
+							material Material {}
+						}
+					geometry Box {
+						 size 0.1 2.8 0.6
+					}
+					}
+							
+							]
+		 
+}
+	DEF	or11 OrientationInterpolator {
+						key	[0 0.5 1]
+						keyValue [
+						0 1 0 0,
+						0 1 0 -0.785,
+						0 1 0 -1.57
+						]
+					}
+	DEF	or12 OrientationInterpolator {
+						key	[0 0.5 1]
+						keyValue [
+						0 1 0  -1.57,
+						0 1 0 -0.785,
+						0 1 0 0
+						]
+					}
+	
+	]
+
+}
+
+
+
+
+
+
+DEF	canhtren Transform {
+	translation	-0.2 1.6 -0.7
+	children [
+		 Transform {
+			
+			rotation 0 1 0 -0.785
+			children Shape {
+				appearance Appearance {
+			
+						material Material {}
+					}
+				geometry Box {
+					 size 0.1 2.8 0.6
+				}
+			}
+		}
+
+	DEF	or21 OrientationInterpolator {
+						key	[0 0.5 1]
+						keyValue [
+						0 1 0 0,
+						0 1 0 -0.785,
+						0 1 0 -1.57
+						]
+					}
+	DEF	or22 OrientationInterpolator {
+						key	[0 0.5 1]
+						keyValue [
+						0 1 0 -1.57,
+						0 1 0 -0.785,
+						0 1 0 0
+						]
+					}
+	]
+}
+]
+}
+]
+}
+DEF	nutbam Transform {
+	translation	-20 0  0
+	children [
+		Transform {
+			children [
+						Shape {
+					 appearance Appearance {
+			
+						material Material {}
+					}
+					geometry Box {
+						size 1 1 1
+					}
+				}
+			]
+		}
+		
+		DEF	turn TouchSensor {
+		}
+	]
+}
+
+DEF ma Script {
+	eventIn	SFBool trave
+	eventOut SFBool	mo
+	eventOut SFBool	tat
+	url	"javascript:
+	var so = 0;
+	function trave(val){
+		if(val){
+			so++;
+			if(so==1){
+				mo = TRUE;
+				tat = FALSE;
+			}
+			else if(so==2){
+				tat = TRUE;
+				mo = FALSE;
+				so = 0;
+			}
+		}
+	}
+	"
+}
+
+DEF	time11 TimeSensor	{
+				enabled	FALSE
+				loop FALSE
+				cycleInterval 1
+			}
+
+DEF	time12 TimeSensor	{
+	enabled	FALSE
+	loop FALSE
+	cycleInterval 1
+}
+
+Transform {
+	translation	 15 0 0
+	children USE dieuhoa
+}
+
+Transform {
+	translation	 30 0 0
+	children USE dieuhoa
+}
+
+ROUTE turn.isActive TO ma.trave
+ROUTE ma.mo	TO time11.enabled
+ROUTE ma.tat TO time12.enabled
+ROUTE ma.mo	 TO	denbao.on
+
+ROUTE turn.touchTime TO	time11.startTime
+ROUTE turn.touchTime TO	time12.startTime
+
+ROUTE  time11.fraction_changed TO or11.set_fraction
+ROUTE  or11.value_changed TO canhduoi.rotation
+
+ROUTE  time12.fraction_changed TO or12.set_fraction
+ROUTE  or12.value_changed TO canhduoi.rotation
+
+ROUTE  time11.fraction_changed TO or21.set_fraction
+ROUTE  or21.value_changed TO canhtren.rotation
+
+ROUTE  time12.fraction_changed TO or22.set_fraction
+ROUTE  or22.value_changed TO canhtren.rotation

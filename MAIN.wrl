@@ -100,3 +100,31 @@ Transform {
 		url	"khuthanhtoan.wrl"
 	}
 }
+Transform {
+	rotation 0 1 0 1.57
+	scale 0.2 0.1 0.1
+	translation	 -0.4 3 -6
+	children [
+		Inline {
+			url	"dieuhoa.wrl"
+		}
+	]
+}
+Transform {
+	translation	0.3 0.68 -14
+	scale 0.13 0.13 0.13
+	children [
+		Inline {
+			url	"nguoinam.wrl"
+		}
+	]
+}
+Transform {
+	translation	3 0.68 -7
+	scale 0.13 0.13 0.13
+	children [
+		Inline {
+			url	"nguoinu.wrl"
+		}
+	]
+}

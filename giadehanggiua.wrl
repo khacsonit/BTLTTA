@@ -13,10 +13,11 @@ DEF ALLkehanggiua Transform {
 		Shape {
 			appearance Appearance {
 				material DEF mau Material {
-					diffuseColor .569 .58 .58
-					specularColor .671 .459 .439
-					ambientIntensity 0.05
-					shininess .008
+					diffuseColor .15 .15 .15
+					specularColor .15 .15 .15
+					emissiveColor .15 .15 .15
+					ambientIntensity 0
+					shininess .047
 				}
 			}
 			geometry Extrusion {
