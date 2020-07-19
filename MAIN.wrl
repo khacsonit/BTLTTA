@@ -128,3 +128,20 @@ Transform {
 		}
 	]
 }
+Transform {
+	 translation 2 7 0
+	children [
+		Inline {
+			url	"quatTran.wrl"
+		}
+	]
+}
+Transform {
+	rotation 0 1 0 1.57
+	 translation 0.4 0.76 -0.2
+	children [
+		Inline {
+			url "tulanhdungnuoc.wrl"
+		}
+	]
+}
