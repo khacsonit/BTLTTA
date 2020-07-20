@@ -1,0 +1,270 @@
+#VRML V2.0 utf8
+
+
+
+Transform {
+	rotation 1 0 0 -1.57
+	children [
+		Transform {
+			children [ #matlung
+					  Shape	{
+						  appearance Appearance	{
+							  material Material {
+								  diffuseColor .33 .3 .28
+								  specularColor .31 .25 .13
+								  ambientIntensity .687
+								  shininess .1
+							  }
+						  }
+					geometry Box {
+					size  .7 1.5 .05
+					} 
+		    	}
+				#matphai
+				Transform {
+					translation	-0.35 0 0.33
+					children [
+						 Shape {
+							 appearance Appearance {
+								 material Material {}
+								 texture ImageTexture {
+
+									 url "cocacola.jpg"
+
+									repeatS TRUE
+
+									repeatT TRUE
+
+								}
+							 }
+					geometry Box {
+					size 0.05 1.5 0.7
+					}
+				}
+					]
+				}
+				#mattrai
+				Transform {
+					translation	0.35 0 0.33
+					children [
+						 Shape {
+							 appearance Appearance {
+								 material Material {}
+								 texture ImageTexture {
+
+									 url "cocacola.jpg"
+
+									repeatS TRUE
+
+									repeatT TRUE
+
+								}
+							 }
+					geometry Box {
+					size 0.05 1.5 0.7
+					}
+				}
+					]
+				}
+				#matday
+				Transform {
+					translation	0 -0.75 0.33
+					children [
+						 Shape {
+							 appearance Appearance {
+								 material Material {}
+								 texture ImageTexture {
+
+									 url "cocacola.jpg"
+
+									repeatS TRUE
+
+									repeatT TRUE
+
+								}
+							 }
+					geometry Box {
+					size 0.75 0.08 0.7
+					}
+				}
+					]
+				}
+				#mattren
+				Transform {
+					translation	0 0.75 0.33
+					children [
+						  Shape {
+							  appearance Appearance {
+								 material Material {}
+								 texture ImageTexture {
+
+									 url "cocacola.jpg"
+
+									repeatS TRUE
+
+									repeatT TRUE
+
+								}
+							 }
+					geometry Box {
+					size 0.75 0.08 0.7
+					}
+				}
+					]
+				}
+				Transform {
+				rotation 0 0 1 1.57
+				translation	0 0 0.68
+				children [		
+				DEF	cen TouchSensor	{}
+					DEF canh1 Transform {
+						#translation	2 0 0
+						children [
+						Shape {
+							appearance Appearance {material Material {transparency 0.7}}
+						geometry	Box	{
+							 size	1.5 0.72 0.01
+						 }
+						}
+				
+			]
+		}
+
+	]
+}
+
+
+
+
+
+
+
+  DEF OpenClock TimeSensor {
+
+    enabled FALSE
+
+    cycleInterval 1
+
+    loop FALSE
+
+    startTime 0.0
+
+    stopTime 1
+
+}
+
+DEF CloseClock TimeSensor {
+
+    enabled FALSE
+
+    cycleInterval 1
+
+    loop FALSE
+
+    startTime 0.0
+
+    stopTime 1
+
+}
+
+DEF Door1Open PositionInterpolator {
+
+ key [ 0.0, 1.0 ]
+
+ keyValue [ 0 0 0,1 0 0]
+
+}
+
+DEF Door1Close PositionInterpolator {
+
+ key [ 0.0, 1.0 ]
+
+ keyValue [ 1 0 0,0 0 0]
+
+}
+
+DEF Door2Open PositionInterpolator {
+
+ key [ 0, 1 ]
+
+ keyValue [ -1 0 0,-2 0 0]
+
+}
+DEF Door2Close PositionInterpolator {
+
+ key [ 0, 1 ]
+
+ keyValue [ -2 0 0,-1 0 0]
+
+}
+
+
+DEF ma Script {
+
+eventIn SFBool turnOn
+
+eventOut SFBool On
+
+eventOut SFBool Off
+
+field SFBool turn FALSE
+
+url "javascript:
+
+function turnOn(val){
+
+if(val){
+
+turn = !turn;
+
+if(turn)
+
+{
+
+On= TRUE;
+
+                        Off=FALSE;
+
+            }
+
+        else
+
+        {
+
+                        On=FALSE;
+
+Off=TRUE;
+
+        }
+
+            }
+
+    }
+
+    "
+
+}
+	
+
+				
+				
+			]
+		}
+			 
+		
+
+	]
+}
+ROUTE cen.isActive TO ma.turnOn
+ROUTE ma.On TO  OpenClock.enabled
+ROUTE ma.Off TO CloseClock.enabled
+ROUTE cen.touchTime TO OpenClock.startTime
+ROUTE cen.touchTime TO CloseClock.startTime
+ROUTE OpenClock.fraction_changed TO Door1Open.set_fraction
+ROUTE CloseClock.fraction_changed TO Door1Close.set_fraction
+ROUTE OpenClock.fraction_changed TO Door2Open.set_fraction
+ROUTE CloseClock.fraction_changed TO Door2Close.set_fraction
+ROUTE Door1Open.value_changed TO canh1.translation
+ROUTE Door1Close.value_changed TO canh1.translation
+#ROUTE Door2Open.value_changed TO canh2.translation
+#ROUTE Door2Close.value_changed TO canh2.translation
