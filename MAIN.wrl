@@ -16,7 +16,7 @@ skyAngle [ 0.075, 0.1, 0.2, 1.309, 1.5708 ]
 
 skyColor [ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ]
 
-
+groundColor	 [0 255 0,0 255 0,0 255 0,0 255 0]
 }
 Shape {
 	geometry IndexedFaceSet	{
@@ -129,7 +129,8 @@ Transform {
 	]
 }
 Transform {
-	 translation 2 7 0
+	 translation 2 3.2 -2.5
+	 scale 0.3 0.3 0.3
 	children [
 		Inline {
 			url	"quatTran.wrl"
@@ -142,6 +143,10 @@ Transform {
 	children [
 		Inline {
 			url "tulanhdungnuoc.wrl"
+		}
+		Transform {
+			translation	1 0 0
+			children Inline	{url "tulanhdungnuoc.wrl"}
 		}
 	]
 }

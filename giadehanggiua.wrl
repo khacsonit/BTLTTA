@@ -168,3 +168,203 @@ Transform {
 	translation	0 0 -96
 	children USE ALLkehanggiua
 }
+
+DEF	duahau2 Transform {
+	translation	0 0 0
+	children [
+		DEF duahau1 Transform{
+	translation	0 0 0
+	children [
+		DEF duahau Transform {
+	translation	0 0 -2
+	children [
+				Transform {
+			translation	3 1.5 30
+			rotation 0 1 0 1.57
+			scale 0.3 0.3 0.3
+			children [
+						Inline {
+	
+					url	"quaduahau.wrl"
+				}
+			]
+		}
+	]
+}
+Transform {
+	translation	0 0 6
+	children [
+	USE	duahau
+	]
+}
+Transform {
+	translation	0 0 12
+	children [
+	USE	duahau
+	]
+}
+	]
+}
+Transform {
+	translation	0 5 0
+	children [
+		USE	duahau1
+	]
+}
+Transform {
+	translation	0 10 0
+	children [
+		USE	duahau1
+	]
+}
+Transform {
+	translation	0 15 0
+	children [
+		USE	duahau1
+	]
+}
+	]
+}
+Transform {
+ translation -6 0 0
+ children USE duahau2
+}
+
+DEF	cachuas Transform {
+	translation	0 0 0
+	children [
+		DEF	cachua Transform {
+	translation	1.2 1.8 17
+	scale 0.25 0.25 0.25
+	children [
+		DEF cachua1 Transform{
+			translation	0 0 0
+			children [
+							Inline {url "cachua.wrl"}
+					Transform {
+						translation	8 0 0
+						children [
+							Inline {url "cachua.wrl"}
+						]
+					}
+					Transform {
+						translation	16 0 0
+						children [
+							Inline {url "cachua.wrl"}
+						]
+					}
+			]
+		}
+		Transform{
+			translation	 0 0 8
+			children [USE cachua1 ]
+		}
+		Transform{
+			translation	 0 0 16
+			children [USE cachua1 ]
+		}
+		Transform{
+			translation	 0 0 24
+			children [USE cachua1 ]
+		}
+	]
+	
+}
+Transform {
+	translation	0 4.8 0
+	children [
+		USE	cachua
+	]
+}
+Transform {
+	translation	0 9.6 0
+	children [
+		USE	cachua
+	]
+}
+Transform {
+	translation	0 14.8 0
+	children [
+		USE	cachua
+	]
+}
+	]
+}
+Transform {
+	translation	-6.5 0 0
+	children [
+		USE	cachuas
+	]
+}
+
+
+DEF	quakhe3 Transform {
+	translation	0 0 0
+	children [
+		DEF	quakhe2 Transform {
+	translation	0 0 3
+	children [
+		DEF	quakhe1 Transform {
+	translation	-8 1.5 0
+	children [
+		DEF	quakhe Transform {
+		translation	 10 0 0
+		scale 1.5 1.5 1.5
+		rotation 0 0 1 -1.57
+		rotation 1 0 0 -1.57
+		children [
+			Inline {url "quakhe.wrl"}
+		]
+	}
+	Transform {
+	 translation  3 0 0
+	 children USE quakhe
+	}
+	]
+}
+Transform {
+	translation	0 0 4
+	children [
+		USE	quakhe1
+	]
+}
+Transform {
+	translation	0 0 8
+	children [
+		USE	quakhe1
+	]
+}
+Transform {
+	translation	0 0 12
+	children [
+		USE	quakhe1
+	]
+}
+	]
+}
+Transform {
+	translation	0 4.5 0
+	children [
+		USE	quakhe2
+	]
+}
+Transform {
+	translation	0 9.5 0
+	children [
+		USE	quakhe2
+	]
+}
+Transform {
+	translation	0 14.5 0
+	children [
+		USE	quakhe2
+	]
+}
+
+	]
+	
+}
+Transform {
+	translation	-6 0 0
+	children USE quakhe3
+}

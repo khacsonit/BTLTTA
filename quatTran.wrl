@@ -127,25 +127,25 @@ Transform {
 	]
 }
 Transform {
-	translation	0 0 -3 
+	translation	0 0 -8 
 	children [
 		USE	quat
 	]
 }
 Transform {
-	translation	0 0 -6 
+	translation	0 0 -16 
 	children [
 		USE	quat
 	]
 }
 Transform {
-	translation	0 0 -9 
+	translation	0 0 -24 
 	children [
 		USE	quat
 	]
 }
 Transform {
-	translation	0 0 -12 
+	translation	0 0 -32 
 	children [
 		USE	quat
 	]
