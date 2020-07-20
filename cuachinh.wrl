@@ -198,7 +198,8 @@ Transform {
 	children [
 		DEF tren Shape {
 		appearance Appearance {
-			material Material {}}
+			material Material {}	
+		}
 			geometry	Box	{
 					   size	23 8 0.1
 				   }
@@ -211,7 +212,7 @@ Transform {
 	children [
 		DEF kinhtren Shape {
 		appearance Appearance {
-			material Material {transparency 0.3}}
+			material Material {}}
 			geometry	Box	{
 					   size	23 13 0.1
 				   }
