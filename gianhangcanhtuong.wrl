@@ -1,0 +1,117 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 -4 0
+	children DEF thanhngang Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor .122 .0667 .0353
+				specularColor .22 .1 .1
+				ambientIntensity 1
+				shininess 1
+			}
+		}
+		geometry Box  {size 16 0.1 1}
+	
+	}
+}
+Transform {
+	translation	0 -3.4 0
+	children USE thanhngang
+}
+Transform {
+	translation	0 -2.8 0
+	children USE thanhngang
+}
+Transform {
+	translation	0 -2.2 0
+	children USE thanhngang
+}
+Transform {
+	translation	0 -1.6 0
+	children USE thanhngang
+}
+Transform {
+	translation	0 -1 0
+	children USE thanhngang
+}
+Transform {
+	translation	0 -0.4 0
+	children USE thanhngang
+}
+Transform {
+	translation	-8 -2.2 0
+	children DEF thanhdoc Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor .122 .0667 .0353
+				specularColor .22 .1 .1
+				ambientIntensity 1
+				shininess 1
+			}
+		}
+		geometry Box  {size 0.1 3.7 1}
+	
+	}
+}
+Transform {
+	translation	8 -2.2 0
+	children USE thanhdoc
+}
+Transform {
+	translation	-8 -2.2 0
+	children DEF thanhchia Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor .122 .0667 .0353
+				specularColor .22 .1 .1
+				ambientIntensity 1
+				shininess 1
+			}
+		}
+		geometry Box  {size 0.1 3.6 1}
+	
+	}
+}
+Transform {
+	translation	-5.45 -2.2 0
+	children USE thanhchia
+}
+
+Transform {
+	translation	-2.9 -2.2 0
+	children USE thanhchia
+}
+
+Transform {
+	translation	-0.35 -2.2 0
+	children USE thanhchia
+}
+
+Transform {
+	translation	2.2 -2.2 0
+	children USE thanhchia
+}
+
+Transform {
+	translation	4.75 -2.2 0
+	children USE thanhchia
+}
+Transform {
+	 translation 0 -2.2 -0.5
+	 children [
+		 Shape	{
+				appearance Appearance {
+			material Material {
+				diffuseColor .34 .21 .24
+				specularColor .2 .08 .14
+				ambientIntensity .0667
+				shininess .02
+				emissiveColor .01 .01 .01
+			}
+		}
+		geometry Box {size 16 3.7 0.1}
+		 }
+	 ]
+}
+
