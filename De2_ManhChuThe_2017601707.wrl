@@ -1,0 +1,236 @@
+#VRML V2.0 utf8
+
+Transform {
+
+	children [
+		DEF caicoc Transform {
+			children[
+			Shape {
+			appearance Appearance {
+				material Material { diffuseColor 1 1 1}}
+			geometry Extrusion {
+				crossSection [
+					1	0
+0.98	0.20
+0.92	0.38
+0.83	0.56
+0.71	0.71
+0.56	0.83
+0.38	0.92
+0.20	0.98
+0.00	1.00
+-0.20	0.98
+-0.38	0.92
+-0.56	0.83
+-0.71	0.71
+-0.83	0.56
+-0.92	0.38
+-0.98	0.20
+-1.00	0.00
+-0.98	-0.20
+-0.92	-0.38
+-0.83	-0.56
+-0.71	-0.71
+-0.56	-0.83
+-0.38	-0.92
+-0.20	-0.98
+0.00	-1.00
+0.20	-0.98
+0.38	-0.92
+0.56	-0.83
+0.71	-0.71
+0.83	-0.56
+0.92	-0.38
+0.98	-0.20
+1.00	0.00
+
+				]
+				spine [
+					0 0 0,		
+					0 0.4 0
+					0 0.6 0
+					0 0.8 0 
+					0 1.2 0
+					0 1.4 0
+					0 1.6 0
+					0 1.8 0
+					0 2 0
+				]
+				scale [
+					0.8 0.8
+					0.8 0.8 
+					0.8 0.8
+					0.8 0.8
+					0.8 0.8,]
+				solid FALSE
+				creaseAngle	1
+				beginCap TRUE
+				endCap FALSE
+			}
+		}
+		Transform {
+			 translation 0 2 0
+			children [
+				DEF	 cainap Transform {
+					
+					children [	
+					Shape {
+					appearance Appearance {
+						material Material { diffuseColor 1 0 0}}
+					geometry Extrusion {
+						crossSection[ 
+							 1	0
+0.98	0.20
+0.92	0.38
+0.83	0.56
+0.71	0.71
+0.56	0.83
+0.38	0.92
+0.20	0.98
+0.00	1.00
+-0.20	0.98
+-0.38	0.92
+-0.56	0.83
+-0.71	0.71
+-0.83	0.56
+-0.92	0.38
+-0.98	0.20
+-1.00	0.00
+-0.98	-0.20
+-0.92	-0.38
+-0.83	-0.56
+-0.71	-0.71
+-0.56	-0.83
+-0.38	-0.92
+-0.20	-0.98
+0.00	-1.00
+0.20	-0.98
+0.38	-0.92
+0.56	-0.83
+0.71	-0.71
+0.83	-0.56
+0.92	-0.38
+0.98	-0.20
+1.00	0.00
+
+				]
+				spine [
+					0 0 0,		
+					0 0.2 0
+					
+				]
+				scale [
+					0.8 0.8
+					0.8 0.8 
+					]
+				solid FALSE
+				creaseAngle	1
+				beginCap FALSE
+				endCap TRUE
+			}
+		}
+							]
+				}
+			]
+		}
+		Transform {
+			#rotation	0 1 0 1.57  
+			translation -1.2 0.7 0
+			children [
+				Shape {
+					appearance Appearance { material Material { diffuseColor  .5 .5 0}}
+					geometry Extrusion {
+						crossSection [
+							0.3 0 ,   0.24 -0.24  ,
+							0 -0.3,	 -0.24  -0.24  ,
+							-0.3 0,  -0.24  0.24 
+							0 0.3 ,   0.24   0.24  , 0.3 0
+						]
+						spine [0 0 0,0 1 0 ,0.5 1 0]
+						scale [0 0,0.1 0.1,0.1 0.1]
+						solid FALSE
+						creaseAngle	1
+						endCap TRUE
+					}
+				}
+			]
+		}
+		
+	]
+}
+]
+}
+	DEF clicked  TouchSensor{ }
+	DEF timer1 TimeSensor {
+				cycleInterval 4
+				loop TRUE
+				enabled	FALSE
+				
+				}
+	 DEF timer2 TimeSensor {
+			enabled	TRUE
+			cycleInterval 3
+			loop FALSE
+			startTime 2
+				}
+
+	DEF ori1  OrientationInterpolator	{
+		key	[0 0.5 1]
+		keyValue [0 1 0 0,0 1 0 3.14 ,0 1 0 6.28]
+						}
+	 DEF  poly1 PositionInterpolator	{
+		 key [0 1]
+		 keyValue [-1 0 0]
+	 }
+						 
+	DEF ma Script {
+
+		eventIn SFBool turnOn
+
+		eventOut SFBool On
+
+		eventOut SFBool Off
+
+		field SFBool turn FALSE
+
+		url "javascript:
+		function turnOn(val){
+
+			if(val){
+
+				turn = !turn;
+
+				if(turn)
+
+				{
+
+					 On= TRUE;
+
+            		 Off=FALSE;
+
+        		} else
+
+        		{
+					On=FALSE;
+
+					Off=TRUE;
+
+        		}
+
+            	}
+
+    		}
+
+    		"
+
+		}
+
+	ROUTE clicked.isActive	TO ma.turnOn
+	ROUTE ma.On TO  timer1.enabled
+	ROUTE clicked.touchTime	TO timer1.startTime
+	ROUTE timer1.fraction_changed TO	ori1.set_fraction
+	ROUTE ori1.value_changed TO  	caicoc.rotation
+	ROUTE timer2.fraction_changed TO poly1.set_fraction
+	ROUTE  poly1.value_changed TO  cainap.translation
+	
+	
