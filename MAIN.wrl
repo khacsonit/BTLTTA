@@ -16,7 +16,7 @@ skyAngle [ 0.075, 0.1, 0.2, 1.309, 1.5708 ]
 
 skyColor [ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ]
 
-
+groundColor	 [0 255 0,0 255 0,0 255 0,0 255 0]
 }
 Shape {
 	geometry IndexedFaceSet	{
@@ -99,4 +99,54 @@ Transform {
 	children Inline	{
 		url	"khuthanhtoan.wrl"
 	}
+}
+Transform {
+	rotation 0 1 0 1.57
+	scale 0.2 0.1 0.1
+	translation	 -0.4 3 -6
+	children [
+		Inline {
+			url	"dieuhoa.wrl"
+		}
+	]
+}
+Transform {
+	translation	0.3 0.68 -14
+	scale 0.13 0.13 0.13
+	children [
+		Inline {
+			url	"nguoinam.wrl"
+		}
+	]
+}
+Transform {
+	translation	3 0.68 -7
+	scale 0.13 0.13 0.13
+	children [
+		Inline {
+			url	"nguoinu.wrl"
+		}
+	]
+}
+Transform {
+	 translation 2 3.2 -2.5
+	 scale 0.3 0.3 0.3
+	children [
+		Inline {
+			url	"quatTran.wrl"
+		}
+	]
+}
+Transform {
+	rotation 0 1 0 1.57
+	 translation 0.4 0.76 -0.2
+	children [
+		Inline {
+			url "tulanhdungnuoc.wrl"
+		}
+		Transform {
+			translation	1 0 0
+			children Inline	{url "tulanhdungnuoc.wrl"}
+		}
+	]
 }

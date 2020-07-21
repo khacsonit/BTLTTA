@@ -1,6 +1,11 @@
 #VRML V2.0 utf8
 
-DEF	quat Transform {
+
+Transform {
+	
+
+	children [
+		DEF	quat Transform {
 	children [
 	#quat tran
 	
@@ -118,6 +123,33 @@ DEF	quat Transform {
 	# END QUAT
 	]
 }
+	
+	]
+}
+Transform {
+	translation	0 0 -8 
+	children [
+		USE	quat
+	]
+}
+Transform {
+	translation	0 0 -16 
+	children [
+		USE	quat
+	]
+}
+Transform {
+	translation	0 0 -24 
+	children [
+		USE	quat
+	]
+}
+Transform {
+	translation	0 0 -32 
+	children [
+		USE	quat
+	]
+}
 
 
 #nut bay quat
@@ -167,7 +199,7 @@ DEF	touchSS TouchSensor	{
 
 DEF	timeSsOn TimeSensor	{
 	enabled	FALSE
-	cycleInterval 2
+	cycleInterval 0.5
 	loop TRUE
 }
 
@@ -179,13 +211,13 @@ DEF	oRiIntorOn OrientationInterpolator {
 
 DEF	timeSsOff TimeSensor	{
 	enabled	FALSE
-	cycleInterval 2
+	cycleInterval .5
 	loop TRUE
 }
 
 DEF	oRiIntorOff OrientationInterpolator {
-	key	[0 .5 1]
-	keyValue[0 1 0 0,0 1 0 3.14,0 1 0 6.28 ]
+	key	[0 ]
+	keyValue[0 0 1 0  ]
 }
 
 ROUTE touchSS.isActive	TO scrip.switch
