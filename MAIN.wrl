@@ -150,3 +150,35 @@ Transform {
 		}
 	]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+Transform {
+	translation	0 8.5 0
+	children Inline	{url "tang2.wrl"}
+}
+Transform {
+	translation	0 13 0
+	children Inline	{url "tang2.wrl"}
+}
+Transform {
+	translation	0 17.5 0
+	children Inline	{url "tang2.wrl"}
+}
+Transform {
+	translation	0 22 0
+	children Inline	{url "tang2.wrl"}
+}
