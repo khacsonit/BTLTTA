@@ -7,7 +7,16 @@ Transform {
 		DEF canh1 Transform {
 			children [
 				Shape {
-					appearance Appearance {material Material {transparency 0.7}}
+					appearance Appearance {
+						material Material {
+									diffuseColor 0 0 .878
+									specularColor .88 .88 .88
+									emissiveColor 0 0 .67
+									ambientIntensity .0633
+									shininess .24
+									transparency .59
+								}
+							}
 				   geometry	Box	{
 					   size	7 10 0.1
 				   }
@@ -28,7 +37,16 @@ Transform {
 			translation	-7 0 0
 			children [
 				Shape {
-					appearance Appearance {material Material {transparency 0.7}}
+					appearance Appearance {
+						material Material {
+									diffuseColor 0 0 .878
+									specularColor .88 .88 .88
+									emissiveColor 0 0 .67
+									ambientIntensity .0633
+									shininess .24
+									transparency .59
+								}
+							}
 				   geometry	Box	{
 					   size	7 10 0.1
 				   }
