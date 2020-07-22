@@ -182,3 +182,29 @@ Transform {
 	translation	0 22 0
 	children Inline	{url "tang2.wrl"}
 }
+#
+
+DEF giatrai Transform {
+	translation	-0.3 1.64 -6.5
+	rotation 0 1 0 1.57
+	scale 0.5 0.4 0.5
+	children [
+		Inline {
+			url	"gianhangcanhtuong.wrl"
+		}
+	]
+}
+Transform {
+	translation	5.55 1.64 -6.5 
+	children [
+		Transform {
+			 scale 0.5 0.4 0.5
+			 rotation 0 1 0 -1.57
+			 children [
+						Inline {
+							url	"gianhangcanhtuong.wrl"
+						}
+					]
+		}
+	]
+}
