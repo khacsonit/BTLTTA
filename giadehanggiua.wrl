@@ -629,40 +629,40 @@ DEF	goimilo2 Transform {
 	
 	children [
 		DEF	goimilo1 Transform {
-	translation	0 0 0
-	children [
-		DEF goimilo Transform {
-			scale 0.8 0.8 0.8
-			translation	2 0.5 -40
-			children [Inline {
-					url	"goimilo.wrl"
-				}]
-		}
-		Transform {
-			translation 0 4.8 0
+			translation	0 0 0
 			children [
-				USE	goimilo
+				DEF goimilo Transform {
+					scale 0.8 0.8 0.8
+					translation	2 0.5 -40
+					children [Inline {
+							url	"goimilo.wrl"
+						}]
+				}
+				Transform {
+					translation 0 4.8 0
+					children [
+						USE	goimilo
+					]
+				}
+				Transform {
+					translation 0 9.6 0
+					children [
+						USE	goimilo
+					]
+				}
+				Transform {
+					translation 0 14.4 0
+					children [
+						USE	goimilo
+					]
+				}
 			]
-		}
-		Transform {
-			translation 0 9.6 0
-			children [
-				USE	goimilo
-			]
-		}
-		Transform {
-			translation 0 14.4 0
-			children [
-				USE	goimilo
-			]
-		}
-	]
 	
-}
-Transform {
-	translation	-5.5 0 0
-	children [USE goimilo1 ]
-}
+		}
+		Transform {
+			translation	-5.5 0 0
+			children [USE goimilo1 ]
+		}
 	]
 }
 Transform {translation 0 0 -10
@@ -674,40 +674,40 @@ DEF	goihaohao2 Transform {
 	translation	0 0 -40
 	children [
 		DEF	goihaohao1 Transform {
-	translation	0 0 0
-	children [
-		DEF goihaohao Transform {
-			scale 0.8 0.8 0.8
-			translation	2 0.5 -40
-			children [Inline {
-					url	"goihaohao.wrl"
-				}]
-		}
-		Transform {
-			translation 0 4.8 0
+			translation	0 0 0
 			children [
-				USE	goihaohao
+				DEF goihaohao Transform {
+					scale 0.8 0.8 0.8
+					translation	2 0.5 -40
+					children [Inline {
+							url	"goihaohao.wrl"
+						}]
+				}
+				Transform {
+					translation 0 4.8 0
+					children [
+						USE	goihaohao
+					]
+				}
+				Transform {
+					translation 0 9.6 0
+					children [
+						USE	goihaohao
+					]
+				}
+				Transform {
+					translation 0 14.4 0
+					children [
+						USE	goihaohao
+					]
+				}
 			]
-		}
-		Transform {
-			translation 0 9.6 0
-			children [
-				USE	goihaohao
-			]
-		}
-		Transform {
-			translation 0 14.4 0
-			children [
-				USE	goihaohao
-			]
-		}
-	]
 	
-}
-Transform {
-	translation	-5.5 0 0
-	children [USE goihaohao1 ]
-}
+		}
+		Transform {
+			translation	-5.5 0 0
+			children [USE goihaohao1 ]
+		}
 	]
 }
 Transform {translation 0 0 -10
@@ -719,40 +719,40 @@ DEF	goingucoc2 Transform {
 	translation	0 0 -20
 	children [
 		DEF	goingucoc1 Transform {
-	translation	0 0 0
-	children [
-		DEF goingucoc Transform {
-			scale 0.8 0.8 0.8
-			translation	2 0.5 -40
-			children [Inline {
-					url	"goingucoc.wrl"
-				}]
-		}
-		Transform {
-			translation 0 4.8 0
+			translation	0 0 0
 			children [
-				USE	goingucoc
+				DEF goingucoc Transform {
+					scale 0.8 0.8 0.8
+					translation	2 0.5 -40
+					children [Inline {
+							url	"goingucoc.wrl"
+						}]
+				}
+				Transform {
+					translation 0 4.8 0
+					children [
+						USE	goingucoc
+					]
+				}
+				Transform {
+					translation 0 9.6 0
+					children [
+						USE	goingucoc
+					]
+				}
+				Transform {
+					translation 0 14.4 0
+					children [
+						USE	goingucoc
+					]
+				}
 			]
-		}
-		Transform {
-			translation 0 9.6 0
-			children [
-				USE	goingucoc
-			]
-		}
-		Transform {
-			translation 0 14.4 0
-			children [
-				USE	goingucoc
-			]
-		}
-	]
 	
-}
-Transform {
-	translation	-5.5 0 0
-	children [USE goingucoc1 ]
-}
+		}
+		Transform {
+			translation	-5.5 0 0
+			children [USE goingucoc1 ]
+		}
 	]
 }
 Transform {translation 0 0 -10

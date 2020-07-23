@@ -10,22 +10,22 @@ Shape{
 Shape{
 	geometry Box{size 0.1 0.1 40}
 }
- Background {
+Background {
 
-skyAngle [ 0.075, 0.1, 0.2, 1.309, 1.5708 ]
+	skyAngle [ 0.075, 0.1, 0.2, 1.309, 1.5708 ]
 
-skyColor [ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ]
+	skyColor [ 1 1 0, .9 .9 .5, .7 .7 .9, 0 0.4 1, 0 0.7 1, 1 1 1 ]
 
-groundColor	 [0 255 0,0 255 0,0 255 0,0 255 0]
+	groundColor	 [0 255 0,0 255 0,0 255 0,0 255 0]
 }
 Shape {
 	geometry IndexedFaceSet	{
 		coord Coordinate {
 			point [
-			30	0  -30,
-			30	0  30,
-			30	0  -30
-			-30	0  -30
+				30	0  -30,
+				30	0  30,
+				30	0  -30
+				-30	0  -30
 			]
 		}
 		coordIndex [0 1 2 3 4 0]
@@ -41,18 +41,18 @@ Transform {
 	translation	5 0 -6
 	children [
 		Shape {
-	geometry Box {
-	size 30 0.05 30
-	}
-	appearance Appearance {
-		texture	ImageTexture {
-			url	"Anh\gach2.jpg"
-			repeatS	TRUE
-			repeatT	TRUE
-		}
-	}
+			geometry Box {
+				size 30 0.05 30
+			}
+			appearance Appearance {
+				texture	ImageTexture {
+					url	"Anh\gach2.jpg"
+					repeatS	TRUE
+					repeatT	TRUE
+				}
+			}
 
-}
+		}
 	]
 }
 
@@ -60,7 +60,7 @@ Transform	{
 	translation	0 3.5 0
 	children [
 		Inline {
-		 url"trannha.wrl"
+			url"trannha.wrl"
 		}
 	]
 }
@@ -68,7 +68,7 @@ Transform	{
 	translation	0 3.5 0
 	children [
 		Inline {
-		 url"tuong.wrl"
+			url"tuong.wrl"
 
 		}
 	]
@@ -78,7 +78,7 @@ Transform {
 	translation	3 0.01 -3
 	children [
 		Inline {
-		url	"giadehanggiua.wrl"
+			url	"giadehanggiua.wrl"
 		}
 	]
 } 
@@ -129,8 +129,8 @@ Transform {
 	]
 }
 Transform {
-	 translation 2 3.2 -2.5
-	 scale 0.3 0.3 0.3
+	translation 2 3.2 -2.5
+	scale 0.3 0.3 0.3
 	children [
 		Inline {
 			url	"quatTran.wrl"
@@ -139,7 +139,7 @@ Transform {
 }
 Transform {
 	rotation 0 1 0 1.57
-	 translation 0.4 0.76 -0.2
+	translation -0.4 0.76 -11
 	children [
 		Inline {
 			url "tulanhdungnuoc.wrl"
@@ -198,13 +198,37 @@ Transform {
 	translation	5.55 1.64 -6.5 
 	children [
 		Transform {
-			 scale 0.5 0.4 0.5
-			 rotation 0 1 0 -1.57
-			 children [
-						Inline {
-							url	"gianhangcanhtuong.wrl"
-						}
-					]
+			scale 0.5 0.4 0.5
+			rotation 0 1 0 -1.57
+			children [
+				Inline {
+					url	"gianhangcanhtuong.wrl"
+				}
+			]
+		}
+	]
+}
+
+#
+Transform {
+	translation	3 0 -8
+	scale 0.8 0.8 0.8
+	children [
+		Inline {
+			url	"tulanhnam.wrl"
+		}
+	]
+}
+
+#tivi
+
+Transform {
+	translation	-0.25 2.2 -10
+	scale 0.4 0.3 0.3
+	rotation 0 1 0 1.57
+	children [
+		Inline {
+			url	"tivichieuvideo.wrl"
 		}
 	]
 }
