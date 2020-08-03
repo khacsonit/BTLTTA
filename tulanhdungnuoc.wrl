@@ -1,70 +1,74 @@
 #VRML V2.0 utf8
 
- #ngan tren tu lanh
+#ngan tren tu lanh
 
 Transform {
 	children [
 		Transform {
 			children [ #matlung
-					  Shape	{
-						  appearance Appearance	{
-							  material Material {
-								  diffuseColor .23 .2 .43
-								  specularColor .32 .4 .4
-								  ambientIntensity .0733
-								  shininess .54
-							  }
-						  }
+				Shape	{
+					appearance Appearance	{
+						material Material {
+							diffuseColor .23 .2 .43
+							specularColor .32 .4 .4
+							ambientIntensity .0733
+							shininess .54
+						}
+					}
 					geometry Box {
-					size  .7 1.5 .05
+						size  .7 1.5 .05
 					} 
 		    	}
 				#matphai
 				Transform {
 					translation	-0.35 0 0.33
 					children [
-						 Shape {
-					geometry Box {
-					size 0.05 1.5 0.7
-					}
+						Shape {
+							appearance Appearance {
+								texture ImageTexture {url "cocacola.jpg"}}
+							geometry Box {
+								size 0.05 1.5 0.7
+							}
 
-				}
+						}
 					]
 				}
 				#mattrai
 				Transform {
 					translation	0.35 0 0.33
 					children [
-						 Shape {
-							 appearance Appearance {
-				texture ImageTexture {url "mattrai.jpg"}}
-					geometry Box {
-					size 0.05 1.5 0.7
-					}
+						Shape {
+							appearance Appearance {
+								texture ImageTexture {url "cocacola.jpg"}}
+							geometry Box {
+								size 0.05 1.5 0.7
+							}
 				
-				}
+						}
 					]
 				}
 				#matday
 				Transform {
 					translation	0 -0.75 0.33
 					children [
-						 Shape {
-					geometry Box {
-					size 0.8 0.08 0.7
-					}
-				}
+						Shape {
+							geometry Box {
+								size 0.8 0.08 0.7
+							}
+						}
 					]
 				}
 				#mattren
 				Transform {
 					translation	0 0.75 0.33
 					children [
-						  Shape {
-					geometry Box {
-					size 0.75 0.08 0.7
-					}
-				}
+						Shape {
+							appearance Appearance {
+								texture ImageTexture {url "cocacola.jpg"}}
+							geometry Box {
+								size 0.75 0.08 0.7
+							}
+						}
 					]
 				}
 				Transform {
@@ -86,7 +90,7 @@ Transform {
 				
 			]
 		}
-			 
+		
 		
 
 	]
@@ -97,7 +101,7 @@ DEF coca1 Transform {
 	scale 0.06 0.06 0.06
 	children [
 		Inline {
-		 url "chaicoca.wrl"
+			url "chaicoca.wrl"
 		}
 	]
 }
@@ -106,7 +110,7 @@ DEF pepsi1 Transform {
 	scale 0.06 0.06 0.06
 	children [
 		Inline {
-		 url "chaipepsi.wrl"
+			url "chaipepsi.wrl"
 		}
 	]
 }
@@ -121,7 +125,7 @@ DEF dew1 Transform {
 	scale 0.06 0.06 0.06
 	children [
 		Inline {
-		 url "mountaindew.wrl"
+			url "mountaindew.wrl"
 		}
 	]
 }
@@ -179,7 +183,7 @@ Transform {
 		USE	pepsi1
 	]
 }
-  Transform {
+Transform {
 	translation	0.02 -0.4 0.05
 	children [
 		USE	pepsi1
@@ -191,13 +195,13 @@ Transform {
 		USE	pepsi1
 	]
 }
-   Transform {
+Transform {
 	translation	0 -0.4 0.26
 	children [
 		USE	coca1
 	]
 }
-  Transform {
+Transform {
 	translation	0.14 -0.4 0.26
 	children [
 		USE	coca1
@@ -251,7 +255,7 @@ Transform {
 		USE	dew1
 	]
 }
-   Transform {
+Transform {
 	translation	0.12 -0.8 0.24
 	children [
 		USE	coca1
