@@ -72,7 +72,7 @@ Shape {
 	{ material  Material { 
 		} 
 		texture ImageTexture{
-			url "Coca cola.PNG"
+			url "Cocacola.PNG"
 			repeatS TRUE
 			repeatT TRUE
 		}
