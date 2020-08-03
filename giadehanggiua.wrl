@@ -576,7 +576,7 @@ DEF	coca3 Transform	{
 							translation	2 1.65 0
 							scale 0.8 0.8 0.8
 							children [Inline {
-									url	"coca.wrl"
+									url	"chaicoca.wrl"
 								}]
 						}
 						Transform {
