@@ -1,5 +1,7 @@
 #VRML V2.0 utf8
-DEF	goi1 Transform {
+DEF	goi2 Transform {
+	children [
+		DEF	goi1 Transform {
 	translation	0 0 0
 	children [
 		DEF goi Transform {
@@ -46,9 +48,10 @@ DEF	goi1 Transform {
 			]
 		}
 		Transform {
-			translation	4 0 0
+			translation	3.6 0 0
 			children USE goi
 		}
+
 	]
 }
 Transform {
@@ -59,15 +62,17 @@ Transform {
 	translation	0 0 -4
 	children USE goi1
 }
-Transform {
-	translation	0 0 -6
-	children USE goi1
+	]
 }
 Transform {
-	translation	0 0 -8
-	children USE goi1
+	translation	 -7	0 0 
+	children USE goi2
 }
 Transform {
-	translation	0 0 -10
-	children USE goi1
+	translation	-14 0 0
+	children USE goi2
+}
+Transform {
+	translation	-21 0 0 
+	children USE goi2
 }

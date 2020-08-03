@@ -225,12 +225,12 @@ Transform {
 
 		}
 
-	ROUTE clicked.isActive	TO ma.turnOn
-	ROUTE ma.On TO  timer1.enabled
-	ROUTE clicked.touchTime	TO timer1.startTime
-	ROUTE timer1.fraction_changed TO	ori1.set_fraction
-	ROUTE ori1.value_changed TO  	caicoc.rotation
-	ROUTE timer2.fraction_changed TO poly1.set_fraction
-	ROUTE  poly1.value_changed TO  cainap.translation
+	#ROUTE clicked.isActive	TO ma.turnOn
+	#ROUTE ma.On TO  timer1.enabled
+	#ROUTE clicked.touchTime	TO timer1.startTime
+	#ROUTE timer1.fraction_changed TO	ori1.set_fraction
+	#ROUTE ori1.value_changed TO  	caicoc.rotation
+	#ROUTE timer2.fraction_changed TO poly1.set_fraction
+	#ROUTE  poly1.value_changed TO  cainap.translation
 	
 	

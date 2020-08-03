@@ -149,25 +149,27 @@ Transform {
 	children USE ALLkehanggiua
 }
 Transform {
+	scale 1 1 1.6
 	translation	0 0 -48
 	children USE ALLkehanggiua
 }
-Transform {
-	translation	0 0 -60
-	children USE ALLkehanggiua
-}
-Transform {
-	translation	0 0 -72
-	children USE ALLkehanggiua
-}
-Transform {
-	translation	0 0 -84
-	children USE ALLkehanggiua
-}
-Transform {
-	translation	0 0 -96
-	children USE ALLkehanggiua
-}
+#Transform {
+#	translation	0 0 -60
+#	children USE ALLkehanggiua
+#}
+#Transform {
+#	scale 1 1 1.1
+#	translation	0 0 -72
+#	children USE ALLkehanggiua
+#}
+#Transform {
+#	translation	0 0 -84
+#	children USE ALLkehanggiua
+#}
+#Transform {
+#	translation	0 0 -96
+#	children USE ALLkehanggiua
+#}
 
 DEF	duahau2 Transform {
 	translation	0 0 0
@@ -181,7 +183,7 @@ DEF	duahau2 Transform {
 						Transform {
 							translation	3 1.5 30
 							rotation 0 1 0 1.57
-							scale 0.3 0.3 0.3
+							scale 0.2 0.3 0.3
 							children [
 								Inline {
 	
@@ -192,7 +194,13 @@ DEF	duahau2 Transform {
 					]
 				}
 				Transform {
-					translation	0 0 6
+					translation	0 0 4
+					children [
+						USE	duahau
+					]
+				}
+				Transform {
+					translation	0 0 8
 					children [
 						USE	duahau
 					]
@@ -260,11 +268,23 @@ DEF	cachuas Transform {
 					children [USE cachua1 ]
 				}
 				Transform{
+					translation	 0 0 -8
+					children [USE cachua1 ]
+				}
+				Transform{
+					translation	 0 0 -16
+					children [USE cachua1 ]
+				}
+				Transform{
 					translation	 0 0 16
 					children [USE cachua1 ]
 				}
 				Transform{
 					translation	 0 0 24
+					children [USE cachua1 ]
+				}
+				Transform{
+					translation	 0 0 32
 					children [USE cachua1 ]
 				}
 			]
@@ -288,10 +308,24 @@ DEF	cachuas Transform {
 				USE	cachua
 			]
 		}
+
 	]
 }
 Transform {
 	translation	-6.5 0 0
+	children [
+		USE	cachuas
+	]
+}
+#
+Transform {
+	translation	0 1.8 0
+	children [
+		USE	cachuas
+	]
+}
+Transform {
+	translation	-6.5 1.8 0
 	children [
 		USE	cachuas
 	]
@@ -309,7 +343,7 @@ DEF	quakhe3 Transform {
 					children [
 						DEF	quakhe Transform {
 							translation	 10 0 0
-							scale 1.5 1.5 1.5
+							scale 1.2 1.2 1.2
 							rotation 0 0 1 -1.57
 							rotation 1 0 0 -1.57
 							children [
@@ -323,19 +357,19 @@ DEF	quakhe3 Transform {
 					]
 				}
 				Transform {
-					translation	0 0 4
+					translation	0 0 3
 					children [
 						USE	quakhe1
 					]
 				}
 				Transform {
-					translation	0 0 8
+					translation	0 0 6
 					children [
 						USE	quakhe1
 					]
 				}
 				Transform {
-					translation	0 0 12
+					translation	0 0 9
 					children [
 						USE	quakhe1
 					]
@@ -365,6 +399,14 @@ DEF	quakhe3 Transform {
 	
 }
 Transform {
+	translation	0 1 -1
+	children USE quakhe3
+}
+Transform {
+	translation	0 2 0 
+	children USE quakhe3
+}
+Transform {
 	translation	-6 0 0
 	children USE quakhe3
 }
@@ -384,7 +426,7 @@ DEF	coc2 Transform {
 					translation	0 0 0
 					children [
 						Transform {
-							translation	5 0 -2
+							translation	5 0.4 -2
 							children [
 								Inline {
 									url	"caicoc.wrl"
@@ -392,7 +434,7 @@ DEF	coc2 Transform {
 							]
 						}
 						Transform {
-							translation	2 0 -2
+							translation	2 0.4 -2
 							children [
 								Inline {
 									url	"caicoc.wrl"
@@ -423,19 +465,19 @@ DEF	coc2 Transform {
 		}
 
 		Transform {
-			translation	0 5 0
+			translation	0 4.6 0
 			children [
 				USE	coc1
 			]
 		}
 		Transform {
-			translation	0 10 0
+			translation	0 9.6 0
 			children [
 				USE	coc1
 			]
 		}
 		Transform {
-			translation	0 15 0
+			translation	0 14.6 0
 			children [
 				USE	coc1
 			]
@@ -450,7 +492,7 @@ Transform {
 #
 
 DEF	mo3 Transform {
-	translation	0 0 0
+	translation	-0.9 0 0
 	children [
 		DEF	mo2 Transform {
 			translation	0 0 0
@@ -515,7 +557,7 @@ DEF	mo3 Transform {
 	]
 }
 Transform {
-	translation	-7.3 0 0
+	translation	-6.2 0 0
 	children USE mo3
 }
 
@@ -625,137 +667,44 @@ Transform {
 }
 
 #
-DEF	goimilo2 Transform {
+DEF goimilo1 Transform {
 	
 	children [
-		DEF	goimilo1 Transform {
-			translation	0 0 0
-			children [
-				DEF goimilo Transform {
+			DEF goimilo Transform {
 					scale 0.8 0.8 0.8
-					translation	2 0.5 -40
+					translation	-2 0.5 -58.6
+					rotation 0 1 0 1.57
 					children [Inline {
 							url	"goimilo.wrl"
 						}]
 				}
 				Transform {
-					translation 0 4.8 0
-					children [
-						USE	goimilo
-					]
+				   translation	0 4.8 0
+				   children	USE	goimilo
 				}
 				Transform {
-					translation 0 9.6 0
-					children [
-						USE	goimilo
-					]
+				   translation	0 9.6 0
+				   children	USE	goimilo
 				}
 				Transform {
-					translation 0 14.4 0
-					children [
-						USE	goimilo
-					]
+				   translation	0 14.4 0
+				   children	USE	goimilo
 				}
-			]
-	
-		}
-		Transform {
-			translation	-5.5 0 0
-			children [USE goimilo1 ]
-		}
 	]
-}
-Transform {translation 0 0 -10
-	children [USE goimilo2 ]
 }
 
-#
-DEF	goihaohao2 Transform {
-	translation	0 0 -40
+Transform	{
+	rotation 0 1 0 3.14156
+	translation 0 0 -100.5 
 	children [
-		DEF	goihaohao1 Transform {
-			translation	0 0 0
-			children [
-				DEF goihaohao Transform {
-					scale 0.8 0.8 0.8
-					translation	2 0.5 -40
-					children [Inline {
-							url	"goihaohao.wrl"
-						}]
-				}
-				Transform {
-					translation 0 4.8 0
-					children [
-						USE	goihaohao
-					]
-				}
-				Transform {
-					translation 0 9.6 0
-					children [
-						USE	goihaohao
-					]
-				}
-				Transform {
-					translation 0 14.4 0
-					children [
-						USE	goihaohao
-					]
-				}
-			]
-	
-		}
-		Transform {
-			translation	-5.5 0 0
-			children [USE goihaohao1 ]
-		}
+		USE	 goimilo1
 	]
-}
-Transform {translation 0 0 -10
-	children [USE goihaohao2 ]
-}
+}		
+			
+				
 
-#
-DEF	goingucoc2 Transform {
-	translation	0 0 -20
-	children [
-		DEF	goingucoc1 Transform {
-			translation	0 0 0
-			children [
-				DEF goingucoc Transform {
-					scale 0.8 0.8 0.8
-					translation	2 0.5 -40
-					children [Inline {
-							url	"goingucoc.wrl"
-						}]
-				}
-				Transform {
-					translation 0 4.8 0
-					children [
-						USE	goingucoc
-					]
-				}
-				Transform {
-					translation 0 9.6 0
-					children [
-						USE	goingucoc
-					]
-				}
-				Transform {
-					translation 0 14.4 0
-					children [
-						USE	goingucoc
-					]
-				}
-			]
-	
-		}
-		Transform {
-			translation	-5.5 0 0
-			children [USE goingucoc1 ]
-		}
-	]
-}
-Transform {translation 0 0 -10
-	children [USE goingucoc2 ]
-}
+
+
+
+
 
