@@ -11,7 +11,7 @@ Transform {
 						material Material {}
 						texture DEF movie MovieTexture{
 								loop FALSE
-								url "Video/aaa.swf"
+								url "video/aaa.swf"
 						
 								}        
             			
@@ -23,9 +23,48 @@ Transform {
 				}
 			]
 		}
+			DEF	congtactivi Transform {
+			translation	0.8 0.2 -0.4
+			rotation 1 0 0 2
+			children [
+				DEF cen TouchSensor {}
+				Shape {
+						appearance  Appearance {
+							material Material {diffuseColor 1 0 0}
+						}
+
+						geometry Cylinder {
+							bottom TRUE
+							height 0.1
+							radius 0.06
+							side TRUE
+							top	TRUE
+						}
+
+						}
+
+			]
+		}
 	
 	]
 }
+
+Transform {
+	translation	0 1.05 -0.3
+	rotation 1 0 0 0.5
+	children [
+		
+		Shape {	
+			geometry Box {size 1 1 0.5}
+			appearance Appearance {
+				material Material {}
+			}
+		}			 
+	
+	]
+}
+
+
 DEF ma Script {
 
 eventIn SFBool turnOn
@@ -71,28 +110,28 @@ Off=TRUE;
     "
 
 }
-	DEF	congtactivi Transform {
-			translation	0.8 0.2 -0.2
-			rotation 1 0 0 1.5
-			children [
-				DEF cen TouchSensor {}
-				Shape {
-						appearance  Appearance {
-							material Material {diffuseColor 1 0 0}
-						}
+#	DEF	congtactivi Transform {
+#			translation	0.8 1 0
+#			rotation 1 0 0 -1
+#			children [
+#				DEF cen TouchSensor {}
+#				Shape {
+#						appearance  Appearance {
+#							material Material {diffuseColor 1 0 0}
+#						}
 
-						geometry Cylinder {
-							bottom TRUE
-							height 0.1
-							radius 0.06
-							side TRUE
-							top	TRUE
-						}
+#						geometry Cylinder {
+#							bottom TRUE
+#							height 0.1
+#							radius 0.06
+#							side TRUE
+#							top	TRUE
+#						}
 
-						}
+#						}
 
-			]
-		}
+#			]
+#		}
 	ROUTE cen.isActive TO ma.turnOn
 	ROUTE ma.On	TO movie.loop
 	ROUTE cen.enabled TO movie.loop 

@@ -1,7 +1,8 @@
 #VRML V2.0 utf8
 #VRML V2.0 utf8
-	#tran day 0.5 ngang 5 dai 7.15
+	#tran day 1.5 ngang 5 dai 7.15
 Transform {
+	translation	0 0 2
 	children 
 		Shape {
 			appearance Appearance {
@@ -30,15 +31,15 @@ Transform {
 					0 -1 ,
 
 				
-					5 -1,
-				5 15.45,
-				-1 15.45,
+					6 -1,
+				6 17.45,
+				-1 17.45,
 				-1 0	
 				
 				]
 				spine [
 					0 0 0,
-					0 0.5 0,
+					0 1.5 0,
 				]
 				scale [
 					1 1,

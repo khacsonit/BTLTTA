@@ -1,6 +1,8 @@
 #VRML V2.0 utf8
 
-DEF	kinh Transform {
+DEF	kinh Transform { 
+	scale 1.98 1 1
+	translation	0.5 0 0
 	children [
 										Shape {
 	
@@ -203,10 +205,7 @@ DEF	kinh Transform {
 
 	]
 }
-Transform {
-	translation	1.01 0 0
-	children USE kinh
-}
+
 
 DEF tuongmeptren Transform {
 	translation	0.5 2.18 0
