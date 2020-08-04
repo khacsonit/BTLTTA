@@ -153,12 +153,20 @@ Transform {
 	scale 0.13 0.13 0.13
 	children [
 		Inline {
-			url	"nguoinu.wrl"
+			url	"nguoinudichuyen.wrl"
 		}
 	]
 }
 Transform {
-	translation 2 3.2 -2.5
+	translation	6 0.68 2
+	scale  0.2 0.2 0.2
+	children [
+		Inline {url "nguoinamdichuyen.wrl"}
+		]
+}
+
+Transform {
+	translation 3.5 3.2 -2.5
 	scale 0.3 0.3 0.3
 	children [
 		Inline {
