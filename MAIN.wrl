@@ -262,3 +262,24 @@ Transform {
 		}
 	]
 }
+#bienhieu
+Transform {
+	translation	3 4.3 2.05
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					
+				}
+				texture	ImageTexture {
+					url	"Anh\kmart.jpg"
+				}
+			}
+			geometry Box {
+				size 5 1.2 2
+			}
+		}
+	]
+
+
+}
