@@ -268,3 +268,569 @@ ROUTE Door1Open.value_changed TO canh1.translation
 ROUTE Door1Close.value_changed TO canh1.translation
 #ROUTE Door2Open.value_changed TO canh2.translation
 #ROUTE Door2Close.value_changed TO canh2.translation
+DEF milo Transform {
+	translation    0.2 0.1 -0.7
+	rotation 1 0 0 90
+	scale 0.02 0.02 0.02
+	children [
+		Inline {
+			url "goimilo.wrl"
+		}
+	]
+}
+Transform {
+	translation	 0 0.16 0
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 0.1
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 0.2
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 0.3
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 0.4
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 0.5
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 0.6
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 0.7
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 0.8
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 0.9
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 1
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 1.1
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.16 1.2
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0.1
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0.2
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0.3
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0.4
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0.5
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0.6
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0.7
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0.8
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 0.9
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 1
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 1.1
+	children [
+		USE	milo
+	]
+}
+Transform {
+	translation	 0 0.32 1.2
+	children [
+		USE	milo
+	]
+}
+DEF coca Transform {
+	translation    -0.26 0.56 -0.6 
+	scale 0.04 0.04 0.04
+	children [
+		Inline {
+			url "chaicoca.wrl"
+		}
+	]
+}
+Transform {
+	translation	 0.1 0 0
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0 0 0.1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 0.1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0.1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0.1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0.1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0.1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0 0 0.2
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 0.2
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0.2
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0.2
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0.2
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0.2
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0 0 0.3
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 0.3
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0.3
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0.3
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0.3
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0.3
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0 0 0.4
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 0.4
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0.4
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0.4
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0.4
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0.4
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0 0 0.5
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 0.5
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0.5
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0.5
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0.5
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0.5
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0 0 0.6
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 0.6
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0.6
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0.6
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0.6
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0.6
+	children [
+		USE	coca
+	]
+}  Transform {
+	translation	 0 0 0.7
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 0.7
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0.7
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0.7
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0.7
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0.7
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0 0 0.8
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 0.8
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0.8
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0.8
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0.8
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0.8
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0 0 0.9
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 0.9
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 0.9
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 0.9
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 0.9
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 0.9
+	children [
+		USE	coca
+	]
+} Transform {
+	translation	 0 0 1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.1 0 1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.2 0 1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.3 0 1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.4 0 1
+	children [
+		USE	coca
+	]
+}
+Transform {
+	translation	 0.5 0 1
+	children [
+		USE	coca
+	]
+}
+
+
+

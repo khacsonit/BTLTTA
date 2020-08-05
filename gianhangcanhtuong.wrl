@@ -114,4 +114,2504 @@ Transform {
 		 }
 	 ]
 }
+DEF coca1 Transform {
+	translation    -6 -0.83 -0.14
+	scale 0.08 0.08 0.08
+	children [
+		Inline {
+			url "chaicoca.wrl"
+		}
+	]
+}
+Transform {
+translation	0.2 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	0.4 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.16 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.32 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.48 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.64 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.8 0 -0.1
+children [
+	USE	coca1
+]
+}	 
+Transform {
+translation	-0.96 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.12 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.28 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.44 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.6 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.76 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.92 0 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.86 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.7 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.54 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.38 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.22 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.06 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.9 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.74 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.58 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.42 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 0 0
+children [
+	USE	coca1
+]
+}
+
+Transform {
+translation	0.16 0 0
+children [
+	USE	coca1
+]
+}
+
+
+Transform {
+translation	0.32 0 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.86 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.7 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.54 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.38 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.22 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.06 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.9 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.74 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.58 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.42 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 0 0.1
+children [
+	USE	coca1
+]
+}
+
+Transform {
+translation	0.16 0 0.1
+children [
+	USE	coca1
+]
+}
+
+
+Transform {
+translation	0.32 0 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.86 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.7 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.54 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.38 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.22 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.06 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.9 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.74 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.58 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.42 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 0 0.3
+children [
+	USE	coca1
+]
+}
+
+Transform {
+translation	0.16 0 0.3
+children [
+	USE	coca1
+]
+}
+
+
+Transform {
+translation	0.32 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	5.8 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	5.96 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.12 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.28 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.44 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.6 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.76 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.92 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.44 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.08 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.24 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.4 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.56 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.72 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.88 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	8.04 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.04 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.2 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.36 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.52 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.68 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.84 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.16 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.32 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.48 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.64 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.8 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.96 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	13.12 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	13.28 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	13.44 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	13.6 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.5 0 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	13.6 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.04 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.2 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.36 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.52 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.68 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.84 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.16 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.32 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	11.48 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.64 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.8 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	12.96 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	13.12 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	13.28 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	13.44 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	5.8 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	5.96 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.12 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.28 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.44 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.6 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.76 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.92 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	6.44 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.08 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.24 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.4 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.56 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.72 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	7.88 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	8.04 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	0.2 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	0.4 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.16 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.32 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.48 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.64 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.8 -3 -0.1
+children [
+	USE	coca1
+]
+}	 
+Transform {
+translation	-0.96 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.12 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.28 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.44 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.6 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.76 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.92 -3 -0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.86 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.7 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.54 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.38 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.22 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.06 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.9 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.74 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.58 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.42 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 -3 0
+children [
+	USE	coca1
+]
+}
+
+Transform {
+translation	0.16 -3 0
+children [
+	USE	coca1
+]
+}
+
+
+Transform {
+translation	0.32 -3 0
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.86 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.7 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.54 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.38 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.22 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.06 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.9 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.74 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.58 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.42 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 -3 0.1
+children [
+	USE	coca1
+]
+}
+
+Transform {
+translation	0.16 -3 0.1
+children [
+	USE	coca1
+]
+}
+
+
+Transform {
+translation	0.32 -3 0.1
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.86 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.7 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.54 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.38 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.22 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-1.06 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.9 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.74 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.58 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.42 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 -3 0.3
+children [
+	USE	coca1
+]
+}
+Transform {
+translation	-0.26 -3 0.3
+children [
+	USE	coca1
+]
+}
+
+Transform {
+translation	0.16 -3 0.3
+children [
+	USE	coca1
+]
+}
+
+
+Transform {
+translation	0.32 -3 0.3
+children [
+	USE	coca1
+]
+}
+DEF goimilo Transform {
+	translation -3.6 -1.6 0.4
+	scale 0.06 0.06 0.06
+	children [
+		Inline {
+			url "goimilo.wrl"
+		}
+	]
+}
+Transform {
+translation	5 0 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	10.6 0 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	9.8 -1.8 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	11.3 -1.8 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	2.6 -1.8 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	-2.6 -1.8 0
+children [
+	USE	goimilo
+]
+}
+DEF pepsi Transform {
+	translation -5.3 -0.83 0.4
+	scale 0.09 0.09 0.09
+	children [
+		Inline {
+			url "pepsi.wrl"
+		}
+	]
+}
+Transform {
+translation	0.18 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.36 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.54 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.72 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.9 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.08 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.26 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.44 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.62 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.8 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.96 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	2.16 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	7.66 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	7.84 0 0
+children [
+	USE	pepsi
+]
+}
+
+Transform {
+translation	8.02 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.18 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.34 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.5 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.66 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.82 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.98 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.14 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.3 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.46 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.62 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.78 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.78 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	7.66 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	7.84 -3 0
+children [
+	USE	pepsi
+]
+}
+
+Transform {
+translation	8.02 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.18 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.34 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.5 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.66 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.82 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.98 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.14 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.3 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.46 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.62 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.78 -3 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.78 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.78 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	7.66 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	7.84 -1.8 0
+children [
+	USE	pepsi
+]
+}
+
+Transform {
+translation	8.02 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.18 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.34 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.5 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.66 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.82 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	8.98 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.14 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.3 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.46 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.62 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.16 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.32 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.48 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.64 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.8 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	0.96 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.12 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.28 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.44 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.6 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.76 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	1.92 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	2.08 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	2.24 -1.8 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	5.1 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	5.26 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	5.42 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	5.58 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	5.74 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	5.9 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation 6.06 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	6.22 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	6.38 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	6.54 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	6.7 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	6.86 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	7.02 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	7.18 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	7.34 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	9.8 -1.2 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	11.3 -1.2 0
+children [
+	USE	goimilo
+]
+}  
+Transform {
+translation	9.8 -0.6 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	11.3 -0.6 0
+children [
+	USE	goimilo
+]
+}
+DEF caicoc Transform {
+	translation    4.5 -1.56 0.3
+	scale 0.16 0.16 0.16
+	children [
+		Inline {
+			url "caicoc.wrl"
+		}
+	]
+} 
+Transform {
+translation	-0.3 0 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-0.6 0 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-0.9 0 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-1.2 0 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-1.5 0 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-1.8 0 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-2.1 0 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-2.1 -0.6 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-0.3 -0.6 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-0.6 -0.6 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-0.9 -0.6 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-1.2 -.6 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-1.5 -.6 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-1.8 -.6 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-0.3 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-0.6 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-0.9 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-1.2 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-1.5 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-1.8 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-2.1 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-9.6 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-9.3 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-9 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-8.7 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-8.4 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-8.1 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-7.8 -1.8 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-9.6 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-9.3 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-9 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-8.7 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-8.4 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-8.1 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-7.8 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-7 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-6.7 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-6.4 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-6.1 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-5.8 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-5.5 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-5.2 -2.4 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-7 -1.2 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-6.7 -1.2 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-6.4 -1.2 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-6.1 -1.2 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-5.8 -1.2 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-5.5 -1.2 0
+children [
+	USE	caicoc
+]
+}
+Transform {
+translation	-5.2 -1.2 0
+children [
+	USE	caicoc
+]
+}
+DEF dew Transform {
+	translation    -0.2 -2.6 0.3
+	scale 0.09 0.09 0.09
+	children [
+		Inline {
+			url "mountaindew.wrl"
+		}
+	]
+}
+Transform {
+translation	0.2 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	0.38 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	0.56 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	0.74 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	0.92 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	1.1 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	1.28 0 0
+children [
+	USE	dew
+]
+}
+
+Transform {
+translation	1.46 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	1.64 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	1.82 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	2 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	2.18 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	0.02 -0.6 0
+children [
+	USE	dew
+]
+}
+
+ Transform {
+translation	0.2 -0.6 0
+children [
+	USE	dew
+]
+}
+
+Transform {
+translation	0.38 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	0.56 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	0.74 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	0.92 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	1.1 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	1.28 -0.6 0
+children [
+	USE	dew
+]
+}
+
+Transform {
+translation	1.46 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	1.64 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	1.82 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	2 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	2.18 -0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.4 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.58 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.76 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.94 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.12 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.3 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.48 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.66 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.84 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.02 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.2 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.38 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.56 0 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.4 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.58 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.76 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.94 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.12 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.3 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.48 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.66 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.84 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.02 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.2 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.38 0.6 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.56 0.6 0
+children [
+	USE	dew
+]
+} Transform {
+translation	-5.4 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.58 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.76 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-5.94 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.12 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.3 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.48 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.66 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-6.84 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.02 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.2 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.38 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	-7.56 1.2 0
+children [
+	USE	dew
+]
+}
+Transform {
+translation	0 -0.5 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	2.5 -0.5 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	2.5 -0.5 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	2.5 0 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	2.5 0.6 0
+children [
+	USE	goimilo
+]
+}
+Transform {
+translation	4.52 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	4.7 0 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	4.52 -0.6 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	4.7 -0.6 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	4.52 -1.2 0
+children [
+	USE	pepsi
+]
+}
+Transform {
+translation	4.7 -1.2 0
+children [
+	USE	pepsi
+]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
