@@ -213,10 +213,8 @@ DEF tuongmeptren Transform {
 		Shape {
 			appearance Appearance {
 			
-				material Material {
-					
-				
-
+				texture	ImageTexture {
+					url	"mautuong.png"
 				}
 			}
 			geometry	Box	{size 4 0.6 0.1}
@@ -236,10 +234,8 @@ DEF	tuongmeptrai Transform {
 		Shape {
 			 appearance Appearance {
 			
-				material Material {
-					
-				
-
+			texture	ImageTexture {
+					url	"mautuong.png"
 				}
 			}
 			geometry	Box	{size 1 4.3 0.1}

@@ -218,9 +218,12 @@ Transform {
 	children [
 		DEF kinhtren Shape {
 		appearance Appearance {
-			material Material {}}
+			 texture	ImageTexture {
+					url	"mautuong.png"
+				}
+		}
 			geometry	Box	{
-					   size	38 10 0.1
+					   size	38 10 0.15
 				   }
 				}	
 		

@@ -1,15 +1,5 @@
 #VRML V2.0 utf8
 
-Shape{
-	geometry Box{size 15 0.1 0.1}
-}
-Shape{
-	geometry Box{size 0.1 40 0.1}
-}
-
-Shape{
-	geometry Box{size 0.1 0.1 40}
-}
 Background {
 
 	skyAngle [ 0.075, 0.1, 0.2, 1.309, 1.5708 ]
@@ -77,39 +67,39 @@ DEF giadehangiua1 Transform {
 	children [
 	
 		Transform {
-	scale 0.04	0.04 0.04
-	translation	2.7 0.01 -2.9
-	children [
-		Inline {
-			url	"giadehanggiua.wrl"
-		}
-	]
-} 
-Transform {
-	scale 0.04	0.04 0.04
+			scale 0.04	0.04 0.04
+			translation	2.7 0.01 -2.9
+			children [
+				Inline {
+					url	"giadehanggiua.wrl"
+				}
+			]
+		} 
+		Transform {
+			scale 0.04	0.04 0.04
 	
-	translation	4.4 0.01 -2.9
-	children [
-		Inline {
-			url	"giadehanggiua.wrl"
-		}
-	]
-} 
-Transform {
-	scale 0.04	0.04 0.04
+			translation	4.4 0.01 -2.9
+			children [
+				Inline {
+					url	"giadehanggiua.wrl"
+				}
+			]
+		} 
+		Transform {
+			scale 0.04	0.04 0.04
 	
-	translation	1 0.01 -2.9
-	children [
-		Inline {
-			url	"giadehanggiua.wrl"
+			translation	1 0.01 -2.9
+			children [
+				Inline {
+					url	"giadehanggiua.wrl"
+				}
+			]
 		}
 	]
 }
-	]
-}
 Transform {
- translation 0 0 -5
- children USE giadehangiua1
+	translation 0 0 -5
+	children USE giadehangiua1
 }
 
 Transform {
@@ -162,7 +152,7 @@ Transform {
 	scale  0.2 0.2 0.2
 	children [
 		Inline {url "nguoinamdichuyen.wrl"}
-		]
+	]
 }
 
 Transform {
@@ -290,4 +280,56 @@ Transform {
 	]
 
 
+}
+#gocnhin
+
+
+Viewpoint {
+
+	fieldOfView 0.785398
+
+	position 4 11 30
+
+	orientation 1 0 0 0
+
+
+	description "Góc nhìn số 1"
+
+	jump TRUE
+
+}
+
+Viewpoint {
+
+	fieldOfView 0.785398
+
+	position 4 3.2 0
+
+	orientation 1 0 0 -0.5
+
+
+	description "Góc nhìn số 2"
+
+	jump TRUE
+
+}
+Transform {
+	translation	0 0 -15
+	rotation 0 1 0 3.14
+	children [
+		Viewpoint {
+
+			fieldOfView 0.785398
+
+			position -3 3.2 0
+
+			orientation 1 0 0 -0.5
+
+
+			description "Góc nhìn số 1"
+
+			jump TRUE
+
+		}
+	]
 }

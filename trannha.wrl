@@ -10,6 +10,9 @@ Transform {
 				
 				
 				}
+				texture	ImageTexture {
+					url	"mautuong.png"
+				}
 			}
 			geometry Extrusion {
 				beginCap TRUE

@@ -435,5 +435,5 @@ DEF	orchanphai OrientationInterpolator {
 
 	]
 }
-ROUTE timetaychan.fraction_changed TO orchanphai.set_fraction
-ROUTE orchanphai.value_changed  TO chanphai.rotation
+#ROUTE timetaychan.fraction_changed TO orchanphai.set_fraction
+#ROUTE orchanphai.value_changed  TO chanphai.rotation
