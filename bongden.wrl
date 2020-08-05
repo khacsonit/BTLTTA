@@ -7,70 +7,122 @@ Transform {
 	
 		DEF den Transform {
 			children [
-					DEF cen TouchSensor {}
+				
 
-
+				DEF	dennho3 Transform {
+					children [
+						DEF	dennho2 Transform {
+							children [
+								DEF dennho1 Transform {
+									children [
+										DEF dennho Shape {
+											appearance Appearance {														 
+												material Material {diffuseColor	1 1 1
+												}
+											}
+											geometry Sphere	{radius 0.4}
 
 			
-		DEF dennho Shape {
-			appearance Appearance {														 
-				material Material {diffuseColor	1 1 1
+										}
+										Transform {
+											translation	0 0 10
+											children [
+												USE	dennho
+											]
+										}
+									]
+								}
+								Transform {
+									translation	10 0 0
+									children [
+										USE	dennho1
+									]
+								}
+			
+							]
+						}
+						Transform {
+							translation	20 0 0
+							children [
+								USE	dennho2
+							]
+						}
+
+					]
 				}
-			}
-			geometry Sphere	{radius 0.4}
-
-			
-		}
-		Transform {
-			translation	1 0 4
-			children [
-				USE	dennho
-			]
-		}
-		
+				Transform {
+					translation	0 0 20
+					children USE dennho3
+				}
+				Transform {
+					translation	0 0 -20
+					children USE dennho3
+				}
+				Transform {
+					translation	0 0 -40
+					children USE dennho3
+				}
+					Transform {
+					translation	0 0 -60
+					children USE dennho3
+				}
+					Transform {
+					translation	0 0 -80
+					children USE dennho3
+				}
 			]
 		}
 	]
 }
+DEF nutbam Transform {
+	translation	-17.5 -19 36
+	children	[
+		Shape {
+			appearance Appearance {material Material {}}
+			geometry Box {size 1 0.5 1}
+		}
+		DEF cen TouchSensor {}
+	]
+}
 DEF ma Script {
 
-eventIn SFBool turnOn
+	eventIn SFBool turnOn
 
-eventOut SFBool On
+	eventOut SFBool On
 
-eventOut SFBool Off
+	eventOut SFBool Off
 
-field SFBool turn FALSE
+	field SFBool turn FALSE
 
-url "javascript:
+	url "javascript:
 
-function turnOn(val){
+	function turnOn(val){
 
-if(val){
+		if(val){
 
-turn = !turn;
+			turn = !turn;
 
-if(turn)
+			if(turn)
 
-{
+			{
 
-On= TRUE;
+				On= TRUE;
 
-                        Off=FALSE;
+                Off=FALSE;
 
             }
 
-        else
+        	else
 
-        {
+        	{
 
-                        On=FALSE;
+                On=FALSE;
 
-Off=TRUE;
+				Off=TRUE;
+
+        	}
 
         }
-
-            }
 
     }
 
@@ -79,32 +131,32 @@ Off=TRUE;
 }
 DEF light1 DirectionalLight {
 
-on FALSE
+	on FALSE
 
-intensity 1
+	intensity 1
 
-ambientIntensity 100
+	ambientIntensity 100
 
-color 1 1 0
+	color 1 1 0
 
-direction 1 0 0
+	direction 1 0 0
 
 }
 
 DEF light PointLight {
 
-on FALSE
+	on FALSE
 
-intensity 1
+	intensity 1
 
-ambientIntensity 0
-color 1 1 0
+	ambientIntensity 0
+	color 1 1 0
 
-location 1 0 0
+	location 1 0 0
 
-attenuation 1 0 0
+	attenuation 1 0 0
 
-radius 100
+	radius 100
 
 }
 
