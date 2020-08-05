@@ -154,7 +154,7 @@ Transform {
 
 #nut bay quat
 DEF swicth Transform {
-	translation	-7 -5 1.0
+	translation	-10.5 -5 5
 	children [
 	Shape {
 		appearance Appearance {
