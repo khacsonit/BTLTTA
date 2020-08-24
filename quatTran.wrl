@@ -65,10 +65,10 @@ Transform {
 						Shape {
 							appearance Appearance {
 								material Material {
-									diffuseColor .61 .61 .61
-									specularColor .39 .39 .39
-									ambientIntensity .25
-									shininess .11
+									diffuseColor .23 .39 .19
+									specularColor .2 .3 .29
+									ambientIntensity .06
+									shininess .39
 								}
 
 							}
@@ -85,10 +85,10 @@ Transform {
 						Shape {
 							appearance Appearance {
 								material Material {
-									diffuseColor .61 .61 .61
-									specularColor .39 .39 .39
-									ambientIntensity .25
-									shininess .11
+									diffuseColor .23 .39 .19
+									specularColor .2 .3 .29
+									ambientIntensity .06
+									shininess .39
 								}
 							}
 							geometry Box {
@@ -214,7 +214,7 @@ DEF	timeSsOff TimeSensor	{
 	cycleInterval .5
 	loop TRUE
 }
-
+  # tao 1 touch cho nút bấm vs 2 timesensor cho quat quay và tắt 2 cái orientation góc quay
 DEF	oRiIntorOff OrientationInterpolator {
 	key	[0 ]
 	keyValue[0 0 1 0  ]

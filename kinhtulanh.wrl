@@ -15,55 +15,55 @@ Transform {
 				Transform {
 					translation	-0.4 0 0
 					children [
-				Shape {
-					appearance Appearance {material Material {transparency 0.4}}
-				   geometry	Box	{
-					   size	0.7 1.5 0.01
-				   }
-				}
-				Transform {
+						Shape {
+							appearance Appearance {material Material {transparency 0.4}}
+							geometry	Box	{
+								size	0.7 1.5 0.01
+							}
+						}
+						Transform {
 					
-					translation	-0.4 0 0
-					children [
-						Shape {
-							appearance Appearance {
-								material Material {
-									diffuseColor .33 .34 .6
-									specularColor .29 .29 .29
-									ambientIntensity .103
-									shininess .79
-								}
+							translation	-0.4 0 0
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor .33 .34 .6
+											specularColor .29 .29 .29
+											ambientIntensity .103
+											shininess .79
+										}
 								
-							}
-							geometry Box {
-								size 0.1 1.5 0.05
-							}
-						}
-					]
-				}
-				Transform {
-					translation	-0.4 0 0.02
-					children [
-						Shape {
-							appearance Appearance {
-								material Material {
-									diffuseColor .8 .51 .09
-									specularColor .92 .43 .01
-									ambientIntensity .117
-									shininess .4
+									}
+									geometry Box {
+										size 0.1 1.5 0.05
+									}
 								}
-							}
-							geometry Sphere	{
-								radius 0.04
-
-							}
+							]
 						}
-					]
-				}
-			]}
+						Transform {
+							translation	-0.4 0 0.02
+							children [
+								Shape {
+									appearance Appearance {
+										material Material {
+											diffuseColor .8 .51 .09
+											specularColor .92 .43 .01
+											ambientIntensity .117
+											shininess .4
+										}
+									}
+									geometry Sphere	{
+										radius 0.04
+
+									}
+								}
+							]
+						}
+					]}
 			]
 		}
 	]
 }
-
+ #su dung cylindersensor goc quay max 3.14 min 0 
 ROUTE cylin.rotation_changed  TO  canhtulanh.rotation

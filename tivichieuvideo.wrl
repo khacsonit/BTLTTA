@@ -110,28 +110,10 @@ Off=TRUE;
     "
 
 }
-#	DEF	congtactivi Transform {
-#			translation	0.8 1 0
-#			rotation 1 0 0 -1
-#			children [
-#				DEF cen TouchSensor {}
-#				Shape {
-#						appearance  Appearance {
-#							material Material {diffuseColor 1 0 0}
-#						}
 
-#						geometry Cylinder {
-#							bottom TRUE
-#							height 0.1
-#							radius 0.06
-#							side TRUE
-#							top	TRUE
-#						}
-
-#						}
-
-#			]
-#		}
+	#Movietextture để url video vào   set loop = false 
+	#touchcensor gọi đến script .
+	#script mmovie .loop
 	ROUTE cen.isActive TO ma.turnOn
 	ROUTE ma.On	TO movie.loop
 	ROUTE cen.enabled TO movie.loop 
