@@ -1,0 +1,116 @@
+#VRML V2.0 utf8
+
+DEF	duongpho Transform {
+
+	children [
+		DEF	duong Transform	{
+			#scale 0.5 0.5 0.5
+			children [
+				#nen duong
+
+				Transform {
+					translation 0 0 0
+					children [
+						Shape {
+							appearance Appearance {texture ImageTexture	{url "Anh/nenduong.png"}
+							}
+							geometry Box {size 80 .3 5}
+						}
+					]
+				}
+
+				#vach ke duong
+
+				DEF	vachdoc Transform {
+					translation 0 0.2 0
+					children [
+						Shape {
+							appearance Appearance {material Material {diffuseColor  1 1 1}}
+							geometry Box {size 2 .1 .4}}]}
+
+
+
+				#vach danh cho nguoi di bo
+
+				Transform {
+					translation 0 0 1
+					children [USE vachdoc ]}
+				Transform {
+					translation 0 0 1
+					children [USE vachdoc ]}
+				Transform {
+					translation 0 0 2
+					children [USE vachdoc ]}
+
+				Transform {
+					translation 0 0 -1
+					children [USE vachdoc ]}
+				Transform {
+					translation 0 0 -2
+					children [USE vachdoc ]}
+
+
+				#cac vach doc
+				Transform {
+					translation 5 0 0
+					children [USE vachdoc ]}
+
+				Transform {
+					translation 10 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation 15 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation 20 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation 25 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation 30 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation 35 0 0
+					children [USE vachdoc ]}
+				
+
+				Transform {
+					translation -5 0 0
+					children [USE vachdoc ]}
+
+				Transform {
+					translation -10 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation -15 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation -20 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation -25 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation -30 0 0
+					children [USE vachdoc ]}
+				Transform {
+					translation -35 0 0
+					children [USE vachdoc ]}
+				
+			]
+		}
+	]
+}
+		Transform {
+			translation	-10 1.75 2
+			children [Inline {url "viahe.wrl"}
+			]
+		}
+		Transform {
+			translation	-10 1.75 -7
+			children [Inline {url "viahe.wrl"}
+			]
+		}
+
+		
