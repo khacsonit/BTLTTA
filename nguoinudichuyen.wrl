@@ -1,7 +1,7 @@
 #VRML V2.0 utf8
 
 PROTO Nguoi[
-	field SFTime nguoiSpeed 80,	#tao 1 proto ng sftime	 dinh nghia kiểu ng có tham số là sftime 
+	field SFTime nguoiSpeed 40,	#tao 1 proto ng sftime	 dinh nghia kiểu ng có tham số là sftime 
 ]
 {
 	DEF	nguoi Transform {
@@ -26,7 +26,7 @@ PROTO Nguoi[
 					0.0, 0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,
 				]
 				keyValue [
-					1 0 0, 0 0 -50, 0 0 -20 , 0 0 -10 , 0 0 10,0 0 30,
+					0 0 -50, 0 0 -50, 0 0 -20 , 0 0 -10 , 0 0 10,0 0 30,
 				   0 0 40,0 0 50 , 0 0 60
 
 				]
