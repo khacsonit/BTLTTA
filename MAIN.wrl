@@ -139,19 +139,12 @@ Transform {
 	]
 }
 Transform {
-	translation	3.5 0.68 -7
+	translation	3.2 0.68 -7
 	scale 0.13 0.13 0.13
 	children [
 		Inline {
-			url	"nguoinudichuyen.wrl"
+			url	"nguoinu.wrl"
 		}
-	]
-}
-Transform {
-	translation	6 0.68 2
-	scale  0.2 0.2 0.2
-	children [
-		Inline {url "nguoinamdichuyen.wrl"}
 	]
 }
 
@@ -272,7 +265,28 @@ DEF	bongden Transform {
 }
 
 
+ #biển
 
+Transform {
+	translation	3 4.3 2.05
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+
+				}
+				texture	ImageTexture {
+					url	"Anh\kmart.jpg"
+				}
+			}
+			geometry Box {
+				size 5 1.2 2
+			}
+		}
+	]
+
+
+} 
 
 
 #gocnhin

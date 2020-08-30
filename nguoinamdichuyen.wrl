@@ -1,40 +1,417 @@
 #VRML V2.0 utf8
 
-PROTO Nguoi[
-	field SFTime nguoiSpeed 10,
-]
-{
-	DEF	nguoi Transform {
-		scale .5 .5 .5
-		rotation 0 1 0 -1.57
-		children [
-			Inline {url "nguoinam.wrl"}
-			
-		
-		  
-		    	]
-	}
+#thatlung
 
-			DEF	nguoiClock TimeSensor {
-				cycleInterval IS nguoiSpeed
-				loop TRUE
-			}
+Transform  { 
+	scale 1 1 0.6
+	translation	-0.05 -0.8 0 
 
-			DEF	nguoiOrientation PositionInterpolator {
-				key	[
-					0.0,0.2,0.4,0.6,0.8,
-				]
-				keyValue [
-					1 0 0, -30 0 0, -40 0 0, -60 0 0, -70 0 0
-
-				]
-			}
-			ROUTE nguoiClock.fraction_changed  TO nguoiOrientation.set_fraction
-			ROUTE nguoiOrientation.value_changed	TO nguoi.set_translation
-}	
-
-Transform {
 	children [
-		Nguoi {}
+		Shape {
+			geometry  Cylinder  { radius  1.18 height 0.8 }
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 0
+				}
+			}
+
+		}
+		
+	]
+}	
+#than 
+Transform {
+	scale 1 1 0.8
+	translation	-0.05 0.4 0 
+	children [
+	
+		Shape {
+
+
+			geometry  Cylinder  { radius  1.2 height 2.8 }
+			appearance Appearance {
+				material Material {
+					diffuseColor 0 0 1
+					
+				}
+			}
+
+		}
 	]
 }
+##dau
+Transform{
+	translation	0 3 0
+	scale 0.8 0.8 0.8
+	children [
+		Transform  {
+
+			children [
+				#toc
+				Transform {
+					translation	0 0.3 0
+					children [
+						Shape {
+							geometry  Sphere {radius 1.1}
+							appearance	Appearance {
+								material Material {
+									diffuseColor  0 0 0 
+								}
+							}
+			
+						}  
+					]
+				}
+			]
+		}
+		#dau
+		Transform  {
+			translation	0 -0.2 0.1
+
+			children [
+				Shape {
+					geometry  Sphere {radius 0.97}
+					appearance	Appearance {
+						material Material {
+							diffuseColor  255 172 91 
+						}
+					}
+
+				}
+			]
+		}
+		#co 
+		Transform  {
+	   
+			translation 0 -1 0  
+
+			children [
+				Shape {
+					geometry  Cylinder {radius 0.3 height 1}
+					appearance	Appearance {
+						material Material {
+							diffuseColor  182 182 182  
+						}
+					}
+
+				}
+			]
+		}
+		Transform  { 
+			translation	0 -1 0 
+
+			children [
+				Shape {
+					geometry  Cone {height 1 bottomRadius  0.35}
+					appearance	Appearance {
+						material Material {
+							diffuseColor 1 1 1  
+						}
+					}
+
+				}
+			]
+		}
+		#mieng
+		Transform  {
+			translation	0 -0.65 .95
+			scale 2 .6 .4
+			rotation 1 0 0 .3
+
+			children [
+				Shape {
+					geometry  Sphere {radius 0.09}
+					appearance	Appearance {
+						material Material {
+							diffuseColor .79 .25 0  
+						}
+					}
+
+				}
+			]
+		}
+		# mat trai
+
+		Transform  {
+			translation	-.3 -.1   .97
+			scale 1.3 .7 .7
+			children [
+				Shape {
+					geometry  Sphere {radius 0.1}
+					appearance	Appearance {
+						material Material {
+							diffuseColor  0 0 0  
+						}
+					}
+
+				}
+			]
+		}
+		# mat phai
+		Transform  {
+			translation	.3 -.1   .97
+			scale 1.3 .7 .7
+			children [
+				Shape {
+					geometry  Sphere {radius 0.1}
+					appearance	Appearance {
+						material Material {
+							diffuseColor  0 0 0  
+						}
+					}
+
+				}
+			]
+		}
+	]
+}
+#vai trai
+DEF	vaitrai Transform {
+	translation	-1.25 1.4 0
+	scale 1 0.8 1
+	children [
+		Shape {
+			appearance	Appearance {
+				material Material {
+					diffuseColor 0 0 1  
+				}
+			}
+			geometry Sphere	{
+				radius 0.5
+
+			}
+		}
+	]
+}
+#vai phai
+DEF	vaiphai Transform {
+	translation	1.25 1.4 0
+	scale 1 0.8 1
+	children [
+		Shape {
+			appearance	Appearance {
+				material Material {
+					diffuseColor 0 0 1  
+				}
+			}
+			geometry Sphere	{
+				radius 0.5
+
+			}
+		}
+	]
+}  
+#taytrai
+DEF	taytrai Transform {
+	translation	0 1.3 0 
+	children [
+		Transform {
+			translation	0 -1.3 0
+			children [
+				Transform {
+					translation	-1.5 0.3 0
+					children [
+						Shape {
+							appearance	Appearance {
+								material Material {
+									diffuseColor  182 182 182  
+								}
+							}
+							geometry Cylinder {
+								radius 0.18
+								height 2
+							}
+						}
+						Transform {
+							translation	0 -1.1 0
+							children [
+								Shape {
+									appearance	Appearance {
+										material Material {
+											diffuseColor  182 182 182  
+										}
+									}
+									geometry Sphere	{
+										radius 0.2
+
+									}
+								}
+							]
+						}
+				
+					]
+				}
+			]
+		}
+		
+		DEF	ortaytrai OrientationInterpolator {
+			key	[0 0.33 0.66 0.85 1]
+			keyValue [
+				1 0 0 0,
+				1 0 0 -0.3,
+				1 0 0 0,
+				1 0 0 0.3	,
+				1 0 0 0
+			]
+		}	
+	]
+} 	
+DEF	timetaychan TimeSensor {
+	cycleInterval 2
+	enabled	TRUE
+	loop TRUE
+
+
+}
+ROUTE timetaychan.fraction_changed TO ortaytrai.set_fraction
+ROUTE ortaytrai.value_changed  TO taytrai.rotation
+
+DEF	tayphai Transform {
+	translation	 -0.1 0 0
+	rotation 0 1 0 3.14
+	children [USE taytrai ]
+}
+# chan trai
+
+DEF	chantrai Transform {
+	translation	0 0 0
+	children [
+		Transform {
+			translation	-.65 -3 0
+			scale 1 1 .7
+			rotation 1 0 0 3.14
+			children [
+				Shape {
+					geometry Cone {
+						height 4 bottomRadius .59}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	-.65 -3.5 0
+			children [
+				Shape {
+					geometry Cylinder {
+						height 3
+						radius .3
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-.65 -5 .2
+			scale 1.4 .6 2.5
+			children [
+				Shape {
+					geometry Sphere	{
+						radius .2
+						
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+				}
+			]
+		}
+
+DEF	orchantrai OrientationInterpolator {
+			key	[0 0.33 0.66 0.85 1]
+			keyValue [
+				1 0 0 0,
+				1 0 0 0.18,
+				1 0 0 0,
+				1 0 0 -0.18	,
+				1 0 0 0
+			]
+		}
+	]
+}
+
+ROUTE timetaychan.fraction_changed TO orchantrai.set_fraction
+ROUTE orchantrai.value_changed  TO chantrai.rotation
+
+
+# chan	phai
+
+DEF	chanphai Transform {
+	translation	1.2 0 0
+	children [
+		Transform {
+			translation	-.65 -3 0
+			scale 1 1 .7
+			rotation 1 0 0 3.14
+			children [
+				Shape {
+					geometry Cone {
+						height 4 bottomRadius .59}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation	-.65 -3.5 0
+			children [
+				Shape {
+					geometry Cylinder {
+						height 3
+						radius .3
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-.65 -5 .2
+			scale 1.4 .6 2.5
+			children [
+				Shape {
+					geometry Sphere	{
+						radius .2
+						
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+						}
+					}
+				}
+			]
+		}
+
+DEF	orchanphai OrientationInterpolator {
+			key	[0 0.33 0.66 0.85 1]
+			keyValue [
+				1 0 0 0,
+				1 0 0 -0.18,
+				1 0 0 0,
+				1 0 0 0.18	,
+				1 0 0 0
+			]
+		}
+
+	]
+}
+ROUTE timetaychan.fraction_changed TO orchanphai.set_fraction
+ROUTE orchanphai.value_changed  TO chanphai.rotation
