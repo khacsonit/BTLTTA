@@ -1,0 +1,18 @@
+#VRML V2.0 utf8
+
+DEF	viahe Transform {
+			translation 10 -1.5 2.5
+			children [
+					Transform {
+					children [
+				Shape {
+					appearance Appearance {texture ImageTexture	{url "Anh/viahe.jpg"}
+					}
+					geometry Box {size 80 .6 4}
+				}
+
+				]
+			}
+			
+			]
+		}

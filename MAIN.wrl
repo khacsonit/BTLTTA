@@ -63,6 +63,24 @@ Transform	{
 		}
 	]
 }
+Transform {
+	translation	2.8 4.8 3
+#	scale 0.15 0.15 1
+	children [
+		Inline {
+			url	"bangten.wrl"
+		}
+	]
+}
+Transform {
+	translation 4.5 0 3.8
+	scale  0.4 0.4 0.4
+	children [
+		Inline {
+		  url "duongthang.wrl"
+		}
+	]
+}
 DEF giadehangiua1 Transform {
 	children [
 	
