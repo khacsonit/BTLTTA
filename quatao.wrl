@@ -1,88 +1,219 @@
 #VRML V2.0 utf8
 
-DEF QuaTao Transform {
-	children[
-		Shape {
-			appearance Appearance {
-				material Material { diffuseColor 1 0 0}}
-			geometry Extrusion {
-				crossSection [
-					0.5 0 ,   0.335 -0.335 ,
-					0 -0.5,	 -0.335 -0.335 ,
-					-0.5 0,  -0.335 0.335
-					0 0.5 ,   0.335  0.335 , 0.5 0
-				]
-				spine [
-					0 0.1 0,	0 0 0,		0 0 0, 
-					0 0.04 0,	0 0.1 0,	0 0.3 0,
-				    0 .5 0,		0 0.6 0,0 0.65 0,    0 0.63 0,
-					, 0 0.5 0
-				]
-				scale [
-					0 0 ,		0.2 0.2,	0.3 0.3,
-					0.4 0.4,	0.5 .5,		0.65 0.65,
-					0.68 0.68, 0.5 0.5,0.28 0.28, 0.22 0.22,	0 0,]
-				solid FALSE
-				creaseAngle	1
-				beginCap TRUE
-				endCap TRUE
-			}
-		}
-		Transform {	  
-			translation 0 .3 0
-			children [
-				Shape {
-					appearance Appearance { material Material { diffuseColor  .5 .5 0}}
-					geometry Extrusion {
-						crossSection [
-							0.3 0 ,   0.24 -0.24  ,
-							0 -0.3,	 -0.24  -0.24  ,
-							-0.3 0,  -0.24  0.24 
-							0 0.3 ,   0.24   0.24  , 0.3 0
-						]
-						spine [0 0 0,0 0.3 0,0.1 0.5 0]
-						scale [0 0,0.1 0.1,0.1 0.1]
-						solid FALSE
-						creaseAngle	1
-						endCap TRUE
-					}
-				}
-			]
-		}
-		DEF	time TimeSensor	{
-			cycleInterval 5
-			enabled	TRUE
-			loop TRUE
-		}
-		DEF pos1	PositionInterpolator {
-			key	[0 0.5 1]
-			keyValue [0 4 0,0 2 0,0 0 0]
-		}
-	]
-}
-DEF	CaiRo Transform	{
-	translation	0 -0.1 0
+Transform {
+	rotation 0 1 0 1.57
 	children [
-		Shape {
-			appearance Appearance { material Material {}}
-			geometry Extrusion {
-				crossSection [ 
-					1 0,0.71 -0.71
-					0 -1,-0.71 -0.71
-					-1 0,-0.71 0.71
-					0 1,0.71 0.71, 1 0
-				]
-				spine [0 0 0,0 0.6 0]
-				scale [0.9 0.9,1 1]
-				beginCap TRUE
-				endCap FALSE
-				solid FALSE
-				creaseAngle	1
-
+		Transform {
+	translation	0 0 0
+	children
+	Shape {
+		appearance Appearance {
+			material Material {
+				diffuseColor .88 .15 .01
+				specularColor .19 .03 .03
+				ambientIntensity .0833
+				shininess .08
 			}
 		}
-	]
+		geometry Extrusion	{
+			beginCap TRUE
+			endCap TRUE
+			creaseAngle	1
+			solid FALSE
+    
+			crossSection [
+2 0
+1.9 -0.65
+1.8 -0.87178 ,
+1.6 -1.2 ,
+1.4 -1.42829 ,
+1.2 -1.6 ,
+1 -1.73205 ,
+0.8 -1.83303 ,
+0.6 -1.90788 ,
+0.4 -1.95959 ,
+0.2 -1.98997 ,
+0.1 -1.99999,
+0 -2 ,
+-0.1 -1.99999,
+-0.2 -1.98997 ,
+-0.4 -1.95959 ,
+-0.6 -1.90788 ,
+-0.8 -1.83303 ,
+-1 -1.73205 ,
+-1.2 -1.6 ,
+-1.4 -1.42829 ,
+-1.6 -1.2 ,
+-1.8 -0.871779 ,
+-2 0 ,
+-1.8 0.87178 ,
+-1.6 1.2 ,
+-1.4 1.42829 ,
+-1.2 1.6 ,
+-1 1.73205 ,
+-0.8 1.83303 ,
+-0.6 1.90788 ,
+-0.4 1.95959 ,
+-0.2 1.98997 ,
+-0.1 1.99999,
+0 2 ,
+0.1 1.99999,
+0.2 1.98997 ,
+0.4 1.95959 ,
+0.6 1.90788 ,
+0.8 1.83303 ,
+1 1.73205 ,
+1.2 1.6 ,
+1.4 1.42829 ,
+1.6 1.2 ,
+1.8 0.871779 ,
+1.9 0.65
+2 0 
+]
+			spine [
+0	4	0	,
+0	4.5	0	,
+0   4.3 0,
+0   4.1 0 ,
+0	4	0	,
+0	3.5	0	,
+0	3	0	,
+0	2.5	0	,
+0	2	0	,
+0	1.5	0	,
+0	1	0	,
+0	0.5	0	,
+0   0.25 0 ,
+0	0	0	,
+0	0.2	0	,
+0	0.4	0	
+
+	
+	
+]
+		
+scale	[
+0	0	,
+0.6	0.6	,
+0.8 0.8
+0.95 0.95,
+0.99 0.99	,
+1.1	1.1	,
+1.15	1.15	,
+1.2	1.2	,
+1.2	1.2	,
+1.14	1.14	,
+1.07	1.07	,
+0.9 0.9	,
+0.7 0.7,
+0.5	0.5	,
+0.15	0.15	,
+0	0
+
+]	
+		}
+	}
 }
 
-ROUTE time.fraction_changed TO pos1.set_fraction
-ROUTE pos1.value_changed TO	QuaTao.translation
+
+Transform {
+translation	 -0.2 4 0
+children Shape {
+	appearance Appearance {
+		material Material {
+			diffuseColor 0 .227 .188
+			specularColor .2 .3 .29
+			ambientIntensity .06
+			shininess .39
+		}
+	}
+	geometry Extrusion {
+		beginCap TRUE
+		endCap TRUE
+		creaseAngle	1
+		crossSection [
+2 0
+1.9 -0.65
+1.8 -0.87178 ,
+1.6 -1.2 ,
+1.4 -1.42829 ,
+1.2 -1.6 ,
+1 -1.73205 ,
+0.8 -1.83303 ,
+0.6 -1.90788 ,
+0.4 -1.95959 ,
+0.2 -1.98997 ,
+0.1 -1.99999,
+0 -2 ,
+-0.1 -1.99999,
+-0.2 -1.98997 ,
+-0.4 -1.95959 ,
+-0.6 -1.90788 ,
+-0.8 -1.83303 ,
+-1 -1.73205 ,
+-1.2 -1.6 ,
+-1.4 -1.42829 ,
+-1.6 -1.2 ,
+-1.8 -0.871779 ,
+-2 0 ,
+-1.8 0.87178 ,
+-1.6 1.2 ,
+-1.4 1.42829 ,
+-1.2 1.6 ,
+-1 1.73205 ,
+-0.8 1.83303 ,
+-0.6 1.90788 ,
+-0.4 1.95959 ,
+-0.2 1.98997 ,
+-0.1 1.99999,
+0 2 ,
+0.1 1.99999,
+0.2 1.98997 ,
+0.4 1.95959 ,
+0.6 1.90788 ,
+0.8 1.83303 ,
+1 1.73205 ,
+1.2 1.6 ,
+1.4 1.42829 ,
+1.6 1.2 ,
+1.8 0.871779 ,
+1.9 0.65
+2 0 
+		]
+		spine [
+0	0.8	0	,
+0.03	0.7	0	,
+0.06	0.6	0	,
+0.09	0.5	0	,
+0.12	0.4	0	,
+0.15	0.3	0	,
+0.15	0.2	0	,
+0.15	0.1	0	,
+0.15	0	0	
+		]
+		scale [
+0.018	0.018	,
+0.024	0.024	,
+0.02	0.02	,
+0.025	0.024	,
+0.021	0.021	,
+0.02	0.02	,
+0.02	0.02	,
+0.022	0.0252	,
+0.025	0.025	
+	
+		]
+	}
+}
+}
+
+Transform {
+	translation	-2.06 5.46 0
+	scale 0.4 0.4 0.4
+	rotation 0 0 1 -2
+	children Inline	{
+		url"faceset.wrl"
+	}
+}
+	]
+}
